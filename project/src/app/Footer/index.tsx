@@ -22,17 +22,29 @@ export default function Footer() {
               <p className="text-nowrap">Liên hệ Hotline: 099-090-0288</p>
               <p>Địa chỉ email: chocaphe123@gmail.com</p>
             </div>
-            <div className="introduce-left_social_link">
-              <a className="border rounded-[50%] text-[#fff] p-[15px]" href="#">
+            <div className="flex gap-6 introduce-left_social_link">
+              <a
+                className="border rounded-[50%] text-[#fff] bg-[#fff]/10 border-none p-[15px]"
+                href="#"
+              >
                 <FaInstagram />
               </a>
-              <a className="border rounded-[50%] text-[#fff] p-[15px]" href="#">
+              <a
+                className="border rounded-[50%] text-[#fff] bg-[#fff]/10 border-none p-[15px]"
+                href="#"
+              >
                 <FaDribbble />
               </a>
-              <a className="border rounded-[50%] text-[#fff] p-[15px]" href="#">
+              <a
+                className="border rounded-[50%] text-[#fff] bg-[#fff]/10 border-none p-[15px]"
+                href="#"
+              >
                 <FaTwitter />
               </a>
-              <a className="border rounded-[50%] text-[#fff] p-[15px]" href="#">
+              <a
+                className="border rounded-[50%] text-[#fff] bg-[#fff]/10 border-none p-[15px]"
+                href="#"
+              >
                 <FaYoutube />
               </a>
             </div>
@@ -41,16 +53,22 @@ export default function Footer() {
                 ứng dụng của chúng tôi
               </h2>
               <div className="flex flex-wrap items-center mx-0 my-4">
-                <img src="img/img-footer (2).png" alt="" />
-                <div className="wrap_link_app">
-                  <div className="flex items-center mx-0 my-3 px-6 py-[13px] border border-[#ffff] rounded-[22.34px]">
+                <img src="img/img-footer (2).png" alt="" className="w-35" />
+                <div className="ml-2.5">
+                  <a
+                    href="https://apps.apple.com/vn/app/ch%E1%BB%A3-c%C3%A0-ph%C3%AA/id6736399292?l=vi"
+                    className="flex items-center mx-0 my-3 px-6 py-[13px] border border-[#ffff] rounded-[22.34px]"
+                  >
                     <FaApple className="mr-3" />
                     <h3>App Store</h3>
-                  </div>
-                  <div className="flex items-center mx-0 my-3 px-6 py-[13px] border border-[#ffff] rounded-[22.34px]">
+                  </a>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.chocaphe.chocaphe&pcampaignid=web_share"
+                    className="flex items-center mx-0 my-3 px-6 py-[13px] border border-[#ffff] rounded-[22.34px]"
+                  >
                     <FaGooglePlay className="mr-3" />
                     <h3>Google Play</h3>
-                  </div>
+                  </a>
                 </div>
               </div>
               <p>Quét mã để tải app ngay bây giờ!</p>
@@ -165,7 +183,7 @@ export default function Footer() {
             placeholder="Nhập email của bạn"
           />
           <a
-            className="flex m-auto items-center justify-center block w-[30%] px-0 py-2 text-2xl text-center bg-[#FF0000] rounded-[10px] no-underline text-[#fff] font-bold mt-[34px]"
+            className="flex m-auto items-center justify-center w-[30%] px-0 py-2 text-2xl text-center bg-[#FF0000] rounded-[10px] no-underline text-[#fff] font-bold mt-[34px]"
             href="#"
           >
             Gửi

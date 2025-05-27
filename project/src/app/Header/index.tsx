@@ -3,7 +3,7 @@ export default function Header() {
   return (
     <>
       <img className="w-full" src={QC.src} title="QC" />
-      <div className="max-w-9/10 h-20 flex flex-wrap justify-between items-center m-auto">
+      <div className="max-w-9/10 h-20 flex flex-wrap justify-between items-center m-auto max-lg:hidden">
         <div>
           <ul className="flex flex-wrap">
             <li className="inline-block px-5">
@@ -61,65 +61,8 @@ export default function Header() {
           >
             Đăng ký
           </a>
-          {/* <Sheet>
-            <SheetTrigger>
-              <FontAwesomeIcon icon={faBars} size="2x" className="" />
-            </SheetTrigger>
-            <SheetContent>
-              <SheetHeader>
-                <SheetTitle>Are you absolutely sure?</SheetTitle>
-                <SheetDescription>
-                  This action cannot be undone. This will permanently delete
-                  your account and remove your data from our servers.
-                </SheetDescription>
-              </SheetHeader>
-            </SheetContent>
-          </Sheet> */}
         </div>
       </div>
-      {/* 
-      <input
-        type="checkbox"
-        className="nav_provide_input_for_mobile"
-        id="nav_provide_input"
-      />
-      <label htmlFor="nav_provide_input" className="nav_provide_for_mobile">
-        <label
-          htmlFor="nav_provide_input"
-          className="nav_provide_for_mobile-close"
-        >
-          <i className="fa-solid fa-x"></i>
-        </label>
-        <ul>
-          <li>
-            <a href="#">Chợ cà phê</a>
-          </li>
-          <li>
-            <a href="#">Tin tức</a>
-          </li>
-          <li>
-            <a href="#">Voucher</a>
-          </li>
-          <li>
-            <a href="#">Đăng tin</a>
-          </li>
-          <li>
-            <a href="#">Sản phẩm nổi bật</a>
-          </li>
-          <div className="nav_signup-login">
-            <a href="#" className="nav_login">
-              Đăng nhập
-            </a>
-            <a href="#" className="nav_signup">
-              Đăng ký
-            </a>
-          </div>
-        </ul>
-      </label>
-      <label
-        htmlFor="nav_provide_input"
-        className="nav_provide_overlay"
-      ></label> */}
     </>
   );
 }
