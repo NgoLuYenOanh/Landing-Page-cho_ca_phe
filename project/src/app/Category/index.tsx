@@ -1,12 +1,30 @@
+"use client";
+import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
+  CarouselApi,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { useEffect, useState } from "react";
 
 export default function Category() {
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap() + 1);
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1);
+    });
+  });
   return (
     <>
       <div className="h-auto flex justify-center items-center py-[28px]">
@@ -20,7 +38,11 @@ export default function Category() {
             </a>
           </div>
           <div className=" text-center font-medium pb-3">
-            <Carousel>
+            <Carousel
+              setApi={setApi}
+              opts={{ loop: true }}
+              plugins={[Autoplay({ delay: 2000 })]}
+            >
               <CarouselContent>
                 <CarouselItem className="basis-1/7">
                   <div className="flex flex-col items-center mx-[1%]">

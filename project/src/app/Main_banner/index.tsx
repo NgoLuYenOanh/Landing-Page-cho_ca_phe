@@ -1,3 +1,7 @@
+"use client";
+import { type CarouselApi } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+
 import {
   Carousel,
   CarouselContent,
@@ -5,13 +9,80 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableFooter,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import { useEffect, useState } from "react";
+
+const Data = [
+  {
+    Market: "Đắk Lắk",
+    totalAmount: "113,400",
+    Change: "-200",
+  },
+  {
+    Market: "Lâm Đồng",
+    totalAmount: "112,800",
+    Change: "-200",
+  },
+  {
+    Market: "Gia Lai",
+    totalAmount: "113,400",
+    Change: "-100",
+  },
+  {
+    Market: "Đắk Nông",
+    totalAmount: "113,500",
+    Change: "-100",
+  },
+  {
+    Market: "Hồ tiêu",
+    totalAmount: "146,000",
+    Change: "-1,000",
+  },
+  {
+    Market: "Tỉ giá USD/VND",
+    totalAmount: "24,635",
+    Change: "0",
+  },
+];
 
 export default function Main_banner() {
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap() + 1);
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1);
+    });
+  }, [api]);
   return (
     <>
       <div className="max-w-9/10 m-auto flex justify-between text-center gap-[30px] mb-[30px]">
         <div className="flex bg-[#FFFFFF] h-auto w-[90%] pb-5 rounded-[20px] relative">
-          <Carousel className="h-full">
+          <Carousel
+            className="h-full"
+            opts={{ loop: true }}
+            setApi={setApi}
+            plugins={[
+              Autoplay({
+                delay: 2000,
+              }),
+            ]}
+          >
             <CarouselContent>
               <CarouselItem>
                 <div className="m-auto h-[95%] w-[90%] mt-[1%]">
@@ -64,6 +135,39 @@ export default function Main_banner() {
               </a>
             </div>
           </div>
+          <Table>
+            <TableHeader>
+              <TableRow>
+                <TableHead className="text-left border-b-[1px] border-solid border-[#dcdcdc] px-2 py-1 text-[#dcdcdc]">
+                  Thị trường
+                </TableHead>
+                <TableHead className="border-b-[1px] border-solid border-[#dcdcdc] px-2 py-1 text-[#dcdcdc]">
+                  Trung bình
+                </TableHead>
+                <TableHead className="border-b-[1px] border-solid border-[#dcdcdc] px-2 py-1 text-[#dcdcdc]">
+                  Thay đổi
+                </TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {Data.map((Market) => (
+                <TableRow key={Market.Market}>
+                  <TableCell className="text-left">{Market.Market}</TableCell>
+                  <TableCell className="font-medium">
+                    {Market.totalAmount}
+                  </TableCell>
+                  <TableCell className="border-b-[1px] border-solid border-[#dcdcdc] px-2 py-1 text-[#f00000]">
+                    {Market.Change}
+                  </TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+            <TableFooter>
+              <TableRow></TableRow>
+            </TableFooter>
+          </Table>
+
+          {/* 
           <table className="m-auto">
             <tr className="border-none">
               <th className="border-b-[1px] border-solid border-[#dcdcdc] px-2 py-1 text-[#dcdcdc]">
@@ -143,6 +247,7 @@ export default function Main_banner() {
               </td>
             </tr>
           </table>
+        </div> */}
         </div>
       </div>
     </>
