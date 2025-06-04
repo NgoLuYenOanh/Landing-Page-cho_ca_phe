@@ -1,19 +1,25 @@
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import Image from "next/image";
+import Image_4 from "../../../public/img/image (4).png";
 export default function QC() {
   return (
     <>
-      <div className="flex w-full h-auto relative">
-        <img
-          className="m-auto h-auto px-0 py-8 w-[90%]"
-          src="/img/image (4).png"
+      <div className="flex w-full relative">
+        <Image
+          src={Image_4.src}
           alt=""
+          className="m-auto px-0 py-8 w-8/10"
+          width={1329}
+          height={100}
         />
-        <div className="absolute top-[50%] right-[8%] translate-y-[-50%]">
-          <button className="rounded-[100%] border-none p-5 bg-[#fff]">
-            <FontAwesomeIcon icon={faArrowRight} size="2x" />
-          </button>
+        <div className="absolute top-[50%] right-45 translate-y-[-50%]">
+          <a
+            href=""
+            className="rounded-[100%] border-none p-5 bg-[#fff] max-lg:p-2"
+          >
+            <FontAwesomeIcon icon={faArrowRight} />
+          </a>
         </div>
       </div>
     </>

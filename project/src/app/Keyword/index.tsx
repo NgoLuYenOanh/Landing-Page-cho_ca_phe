@@ -17,31 +17,59 @@ export default function Keyword() {
     <>
       <Table className="flex justify-center mx-auto my-3 text-[#5b5b5b] w-full">
         <TableBody>
-          {Data.map((text_1) => (
-            <TableRow key={text_1.text_1}>
+          {Data.map((item) => (
+            <TableRow key={item.text_1}>
               <TableCell className="border-none px-2 py-1">
-                {text_1.text_1}
+                {item.text_1}
               </TableCell>
               <TableCell className="border-none px-2 py-1">
-                {text_1.text_2}
+                {item.text_2}
               </TableCell>
               <TableCell className="border-none px-2 py-1">
-                {text_1.text_3}
+                {item.text_3}
               </TableCell>
               <TableCell className="border-none px-2 py-1">
-                {text_1.text_4}
+                {item.text_4}
               </TableCell>
               <TableCell className="border-none px-2 py-1">
-                {text_1.text_5}
+                {item.text_5}
               </TableCell>
               <TableCell className="border-none px-2 py-1">
-                {text_1.text_6}
+                {item.text_6}
               </TableCell>
               <TableCell className="border-none px-2 py-1">
-                {text_1.text_7}
+                {item.text_7}
               </TableCell>
               <TableCell className="border-none px-2 py-1">
-                {text_1.text_8}
+                {item.text_8}
+              </TableCell>
+            </TableRow>
+          ))}
+          {Data.map((item) => (
+            <TableRow key={item.text_1}>
+              <TableCell className="border-none px-2 py-1">
+                {item.text_1}
+              </TableCell>
+              <TableCell className="border-none px-2 py-1">
+                {item.text_2}
+              </TableCell>
+              <TableCell className="border-none px-2 py-1">
+                {item.text_3}
+              </TableCell>
+              <TableCell className="border-none px-2 py-1">
+                {item.text_4}
+              </TableCell>
+              <TableCell className="border-none px-2 py-1">
+                {item.text_5}
+              </TableCell>
+              <TableCell className="border-none px-2 py-1">
+                {item.text_6}
+              </TableCell>
+              <TableCell className="border-none px-2 py-1">
+                {item.text_7}
+              </TableCell>
+              <TableCell className="border-none px-2 py-1">
+                {item.text_8}
               </TableCell>
             </TableRow>
           ))}

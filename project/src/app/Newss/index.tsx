@@ -1,26 +1,39 @@
+import Image from "next/image";
+import Newss_box_1 from "../../../public/img/tin_tuc_box (1).png";
+import Newss_box_2 from "../../../public/img/tin_tuc_box (2).png";
+import Newss_box_3 from "../../../public/img/tin_tuc_box (3).png";
+import Newss_box_4 from "../../../public/img/tin_tuc_box (4).png";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Newss() {
   return (
     <>
       <div className="bg-[#fff] h-auto">
-        <div className="h-[50px] w-[90%] m-auto pt-10">
-          <h1 className="uppercase text-3xl font-semibold float-left border-b-[4px] border-main">
+        <div className="h-[50px] w-8/10 m-auto pt-10">
+          <h1 className="uppercase text-2xl font-semibold float-left border-b-[4px] border-main">
             Tin Tức
           </h1>
           <a
-            className="float-right text-main text-[20px] px-6 py-4 no-underline"
+            className="float-right text-main text-2xl px-6 py-4 no-underline"
             href="#"
           >
             Xem Thêm
           </a>
         </div>
-        <div className="m-auto w-[95%] flex flex-wrap justify-between">
-          <div className="w-[654px] rounded-[10px] mx-auto my-3 border border-[#8080808c]">
+        <div className="m-auto w-8/10 flex flex-wrap justify-between">
+          <div className="w-lg rounded-[10px] mx-auto my-3 border border-[#8080808c]">
             <h2 className="font-bold text-2xl px-6 py-[15px]">
               Tổng hợp thị trường cà phê tuần từ 07 đến 11/10/2024 và cuối năm
               2024
             </h2>
             <div className="flex px-6 py-0">
-              <img src="img/tin_tuc_box (4).png" alt="" />
+              <Image
+                src={Newss_box_4.src}
+                className="max-sm:hidden"
+                alt=""
+                height={136}
+                width={136}
+              />
               <span className="ml-[5%] max-w-[80%] text-[#999999]">
                 Nguyên nhân gây giảm giá phiên cuối tuần được cho là do đồng
                 real Brazil yếu. Đồng real giảm xuống mức thấp nhất trong 1
@@ -31,16 +44,22 @@ export default function Newss() {
               <a className="text-main" href="#">
                 Đọc thêm{" "}
               </a>
-              <i className="fa-solid fa-arrow-right"></i>
+              <FontAwesomeIcon icon={faArrowRight} />
             </div>
           </div>
-          <div className="w-[654px] rounded-[10px] mx-auto my-3 border border-[#8080808c]">
+          <div className="w-lg rounded-[10px] mx-auto my-3 border border-[#8080808c]">
             <h2 className="font-bold text-2xl px-6 py-[15px]">
               Tổng hợp thị trường cà phê tuần từ 07 đến 11/10/2024 và cuối năm
               2024
             </h2>
             <div className="flex px-6 py-0">
-              <img src="img/tin_tuc_box (3).png" alt="" />
+              <Image
+                src={Newss_box_3.src}
+                className="max-sm:hidden"
+                alt=""
+                height={136}
+                width={136}
+              />
               <span className="ml-[5%] max-w-[80%] text-[#999999]">
                 Nguyên nhân gây giảm giá phiên cuối tuần được cho là do đồng
                 real Brazil yếu. Đồng real giảm xuống mức thấp nhất trong 1
@@ -51,16 +70,22 @@ export default function Newss() {
               <a className="text-main" href="#">
                 Đọc thêm{" "}
               </a>
-              <i className="fa-solid fa-arrow-right"></i>
+              <FontAwesomeIcon icon={faArrowRight} />
             </div>
           </div>
-          <div className="w-[654px] rounded-[10px] mx-auto my-3 border border-[#8080808c]">
+          <div className="w-lg rounded-[10px] mx-auto my-3 border border-[#8080808c]">
             <h2 className="font-bold text-2xl px-6 py-[15px]">
               Tổng hợp thị trường cà phê tuần từ 07 đến 11/10/2024 và cuối năm
               2024
             </h2>
             <div className="flex px-6 py-0">
-              <img src="img/tin_tuc_box (2).png" alt="" />
+              <Image
+                src={Newss_box_2.src}
+                className="max-sm:hidden"
+                alt=""
+                height={136}
+                width={136}
+              />
               <span className="ml-[5%] max-w-[80%] text-[#999999]">
                 Nguyên nhân gây giảm giá phiên cuối tuần được cho là do đồng
                 real Brazil yếu. Đồng real giảm xuống mức thấp nhất trong 1
@@ -71,16 +96,22 @@ export default function Newss() {
               <a className="text-main" href="#">
                 Đọc thêm{" "}
               </a>
-              <i className="fa-solid fa-arrow-right"></i>
+              <FontAwesomeIcon icon={faArrowRight} />
             </div>
           </div>
-          <div className="w-[654px] rounded-[10px] mx-auto my-3 border border-[#8080808c]">
+          <div className="w-lg rounded-[10px] mx-auto my-3 border border-[#8080808c]">
             <h2 className="font-bold text-2xl px-6 py-[15px]">
               Tổng hợp thị trường cà phê tuần từ 07 đến 11/10/2024 và cuối năm
               2024
             </h2>
             <div className="flex px-6 py-0">
-              <img src="img/tin_tuc_box (1).png" alt="" />
+              <Image
+                src={Newss_box_1.src}
+                className="max-sm:hidden"
+                alt=""
+                height={136}
+                width={136}
+              />
               <span className="ml-[5%] max-w-[80%] text-[#999999]">
                 Nguyên nhân gây giảm giá phiên cuối tuần được cho là do đồng
                 real Brazil yếu. Đồng real giảm xuống mức thấp nhất trong 1
@@ -91,7 +122,7 @@ export default function Newss() {
               <a className="text-main" href="#">
                 Đọc thêm{" "}
               </a>
-              <i className="fa-solid fa-arrow-right"></i>
+              <FontAwesomeIcon icon={faArrowRight} />
             </div>
           </div>
         </div>

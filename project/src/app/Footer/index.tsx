@@ -8,6 +8,11 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
+import Icon from "../../../public/img/Icon.png";
+import Label from "../../../public/img/Label.png";
+import Img_footer_1 from "../../../public/img/img-footer (1).png";
+import Img_footer_2 from "../../../public/img/img-footer (2).png";
 export default function Footer() {
   return (
     <>
@@ -15,8 +20,8 @@ export default function Footer() {
         <div className="w-[90%] flex flex-wrap justify-around gap-[25px] m-auto px-0 py-10 h-auto text-2xl text-[#fff]">
           <div className="introduce-left">
             <div className="w-[78%] flex items-center gap-2.5 h-auto">
-              <img className="h-[45px] w-auto" src="img/icon.png" alt="" />
-              <img className="w-full h-[45px]" src="img/Label.png" alt="" />
+              <Image src={Icon.src} alt="" width={65} height={45} />
+              <Image src={Label.src} alt="" width={365} height={52} />
             </div>
             <div className="mx-0 my-[5%] leading-[35.74px]">
               <p className="text-nowrap">Liên hệ Hotline: 099-090-0288</p>
@@ -53,18 +58,18 @@ export default function Footer() {
                 ứng dụng của chúng tôi
               </h2>
               <div className="flex flex-wrap items-center mx-0 my-4">
-                <img src="img/img-footer (2).png" alt="" className="w-35" />
+                <Image src={Img_footer_2} alt="" width={185} height={185} />
                 <div className="ml-2.5">
                   <a
                     href="https://apps.apple.com/vn/app/ch%E1%BB%A3-c%C3%A0-ph%C3%AA/id6736399292?l=vi"
-                    className="flex items-center mx-0 my-3 px-6 py-[13px] border border-[#ffff] rounded-[22.34px]"
+                    className="flex items-center mx-0 my-3 px-6 py-[13px] border-3 border-[#ffff] rounded-[22.34px]"
                   >
                     <FaApple className="mr-3" />
                     <h3>App Store</h3>
                   </a>
                   <a
                     href="https://play.google.com/store/apps/details?id=com.chocaphe.chocaphe&pcampaignid=web_share"
-                    className="flex items-center mx-0 my-3 px-6 py-[13px] border border-[#ffff] rounded-[22.34px]"
+                    className="flex items-center mx-0 my-3 px-6 py-[13px] border-3 border-[#ffff] rounded-[22.34px]"
                   >
                     <FaGooglePlay className="mr-3" />
                     <h3>Google Play</h3>
@@ -156,27 +161,35 @@ export default function Footer() {
           </h1>
           <div className="flex gap-5 items-center px-0 py-3">
             <FontAwesomeIcon className="mr-3" icon={faLocationDot} size="2x" />
-            <p className="text-[26.46px] leading-[37.8px]">
+            <p className="text-2xl leading-[37.8px]">
               Địa chỉ: 180 Vũ Quỳnh, quận Thanh Khê, TP Đà Nẵng
             </p>
           </div>
           <div className="flex gap-5 items-center px-0 py-3">
             <FontAwesomeIcon className="mr-3" icon={faFile} size="2x" />
-            <p className="text-[26.46px] leading-[37.8px]">
+            <p className="text-2xl leading-[37.8px]">
               Giấy phép kinh doanh số: 019482952205
             </p>
           </div>
           <div className="flex gap-5 items-center px-0 py-3">
             <FontAwesomeIcon className="mr-3" icon={faFile} size="2x" />
-            <p className="text-[26.46px] leading-[37.8px]">
+            <p className="text-2xl leading-[37.8px]">
               Giấy phép hoạt động dịch vụ việc làm số: 18/SLĐTBXH-GP
             </p>
           </div>
         </div>
         <div className="leading-[39px]">
-          <img className="flex m-auto" src="img/img-footer (1).png" alt="" />
-          <h2>Đăng ký nhà bán hàng trên Chocaphe</h2>
-          <p>Để lại địa chỉ mail tư vấn đăng ký</p>
+          <Image
+            src={Img_footer_1.src}
+            alt=""
+            className="flex m-auto"
+            height={18}
+            width={217}
+          />
+          <h2 className="text-2xl">Đăng ký nhà bán hàng trên Chocaphe</h2>
+          <p className="text-2xl text-[#7C7C7C]">
+            Để lại địa chỉ mail tư vấn đăng ký
+          </p>
           <input
             className="w-full px-10 py-[15px] leading-2.5 bg-[#312F2F] text-[#ffff]"
             type="text"

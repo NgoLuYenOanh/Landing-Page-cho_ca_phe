@@ -14,7 +14,7 @@ import Test_API from "./Test_API";
 
 export default function Home() {
   return (
-    <div className="poppins-regular">
+    <>
       <Header />
       <main className="bg-bg relative">
         <div className="bg-[#E9FFFB] pb-5">
@@ -32,6 +32,6 @@ export default function Home() {
         <Keyword />
       </main>
       <Footer />
-    </div>
+    </>
   );
 }

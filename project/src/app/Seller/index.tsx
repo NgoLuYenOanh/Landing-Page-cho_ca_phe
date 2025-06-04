@@ -1,22 +1,37 @@
+import Image from "next/image";
+import Seller_header from "../../../public/img/seller_header.png";
+import Seller_box_1 from "../../../public/img/seller-box (1).png";
+import Seller_box_2 from "../../../public/img/seller-box (2).png";
+import Seller_box_3 from "../../../public/img/seller-box (3).png";
+import Seller_box_4 from "../../../public/img/seller-box (4).png";
+import Seller_box_img_1 from "../../../public/img/seller-box-img (1).png";
+import Seller_box_img_2 from "../../../public/img/seller-box-img (2).png";
+import Seller_box_img_3 from "../../../public/img/seller-box-img (3).png";
+import Seller_box_img_4 from "../../../public/img/seller-box-img (4).png";
+import Seller_box_img_5 from "../../../public/img/seller-box-img (5).png";
+import Seller_box_img_6 from "../../../public/img/seller-box-img (6).png";
+import Seller_box_img_7 from "../../../public/img/seller-box-img (7).png";
 export default function Seller() {
   return (
     <>
       <div className="h-auto bg-[#fff] px-0 py-8">
-        <div className="flex gap-5 max-w-9/10 m-auto items-center">
-          <img className="h-[60px]" src="img/seller_header.png" alt="" />
-          <p className="text-3xl uppercase text-[#f94700] font-bold">
+        <div className="flex max-lg:w-full gap-5 max-w-8/10 m-auto items-center">
+          <Image src={Seller_header.src} alt="" width={57} height={57} />
+          <p className="text-2xl uppercase text-[#f94700] font-bold">
             Nhà bán hàng nổi bật
           </p>
         </div>
-        <div className="flex flex-wrap justify-evenly">
-          <div className="w-[645px] h-[520px] border-2 border-[#ff8d45] rounded-[40px] mx-0 my-10">
+        <div className="flex flex-wrap justify-evenly m-auto max-w-9/10">
+          <div className="w-lg h-[520px] max-lg:max-8/10 overflow-hidden border-2 border-[#ff8d45] rounded-[40px] mx-0 my-10">
             <div className="mx-0 my-8">
-              <img
-                className="float-left w-[111px] mx-[18px] my-0"
-                src="img/seller-box (4).png"
+              <Image
+                src={Seller_box_4.src}
                 alt=""
+                className="float-left mx-[18px] my-0"
+                height={100}
+                width={100}
               />
-              <div className="seller_box_header-info">
+              <div className="">
                 <p className="text-[22px] font-medium text-[#191e38]">
                   Cà phê Hạnh Trang Nguyên
                 </p>
@@ -26,43 +41,51 @@ export default function Seller() {
                 </span>
               </div>
             </div>
-            <p className="w-[90%] text-[#999999] font-normal text-[16px] mb-7 ml-5">
+            <p className="w-[90%] text-[#999999] font-normal text-sm mb-7 ml-5">
               Highlands Coffee là nhà cung cấp cà phê nổi tiếng của Việt Nam, sử
               dụng hạt cà phê từ các vùng núi cao nguyên như Buôn Mê Thuột.
             </p>
             <div className="flex justify-around">
-              <div className="h-[234px] w-[182px] mx-3 my-0 bg-[#f4f5f7] ">
-                <img
-                  className="mx-[7px] my-0.5 font-medium text-[#3a3a3a]"
-                  src="img/seller-box-img (7).png"
+              <div className="h-[234px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
+                <Image
+                  src={Seller_box_img_7}
                   alt=""
+                  height={166}
+                  width={153}
+                  className="my-0.5 font-medium text-[#3a3a3a]"
                 />
                 <p>Bịch 100g Cà phê rang xay</p>
               </div>
-              <div className="h-[234px] w-[182px] mx-3 my-0 bg-[#f4f5f7] ">
-                <img
-                  className="mx-[7px] my-0.5 font-medium text-[#3a3a3a]"
-                  src="img/seller-box-img (6).png"
+              <div className="h-[234px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
+                <Image
+                  src={Seller_box_img_6}
                   alt=""
+                  height={166}
+                  width={153}
+                  className="my-0.5 font-medium text-[#3a3a3a]"
                 />
                 <p>Bịch 100g Cà phê rang xay</p>
               </div>
-              <div className="h-[234px] w-[182px] mx-3 my-0 bg-[#f4f5f7] ">
-                <img
-                  className="mx-[7px] my-0.5 font-medium text-[#3a3a3a]"
-                  src="img/seller-box-img (5).png"
+              <div className="h-[234px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
+                <Image
+                  src={Seller_box_img_5}
                   alt=""
+                  height={166}
+                  width={153}
+                  className="my-0.5 font-medium text-[#3a3a3a]"
                 />
                 <p>Bịch 100g Cà phê rang xay</p>
               </div>
             </div>
           </div>
-          <div className="w-[645px] h-[520px] border-2 border-[#ff8d45] rounded-[40px] mx-0 my-10">
+          <div className="w-lg h-[520px] max-lg:max-8/10 overflow-hidden border-2 border-[#ff8d45] rounded-[40px] mx-0 my-10">
             <div className="mx-0 my-8">
-              <img
-                className="float-left w-[111px] mx-[18px] my-0"
-                src="img/seller-box (3).png"
+              <Image
+                src={Seller_box_3.src}
                 alt=""
+                className="float-left mx-[18px] my-0"
+                height={100}
+                width={100}
               />
               <div className="seller_box_header-info">
                 <p className="text-[22px] font-medium text-[#191e38]">
@@ -74,43 +97,51 @@ export default function Seller() {
                 </span>
               </div>
             </div>
-            <p className="w-[90%] text-[#999999] font-normal text-[16px] mb-7 ml-5">
+            <p className="w-[90%] text-[#999999] font-normal text-sm mb-7 ml-5">
               Highlands Coffee là nhà cung cấp cà phê nổi tiếng của Việt Nam, sử
               dụng hạt cà phê từ các vùng núi cao nguyên như Buôn Mê Thuột.
             </p>
             <div className="flex justify-around">
-              <div className="h-[234px] w-[182px] mx-3 my-0 bg-[#f4f5f7] ">
-                <img
-                  className="mx-[7px] my-0.5 font-medium text-[#3a3a3a]"
-                  src="img/seller-box-img (7).png"
+              <div className="h-[234px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
+                <Image
+                  src={Seller_box_img_4}
                   alt=""
+                  height={166}
+                  width={153}
+                  className="my-0.5 font-medium text-[#3a3a3a]"
                 />
                 <p>Bịch 100g Cà phê rang xay</p>
               </div>
-              <div className="h-[234px] w-[182px] mx-3 my-0 bg-[#f4f5f7] ">
-                <img
-                  className="mx-[7px] my-0.5 font-medium text-[#3a3a3a]"
-                  src="img/seller-box-img (6).png"
+              <div className="h-[234px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
+                <Image
+                  src={Seller_box_img_6}
                   alt=""
+                  height={166}
+                  width={153}
+                  className="my-0.5 font-medium text-[#3a3a3a]"
                 />
                 <p>Bịch 100g Cà phê rang xay</p>
               </div>
-              <div className="h-[234px] w-[182px] mx-3 my-0 bg-[#f4f5f7] ">
-                <img
-                  className="mx-[7px] my-0.5 font-medium text-[#3a3a3a]"
-                  src="img/seller-box-img (5).png"
+              <div className="h-[234px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
+                <Image
+                  src={Seller_box_img_5}
                   alt=""
+                  height={166}
+                  width={153}
+                  className="my-0.5 font-medium text-[#3a3a3a]"
                 />
                 <p>Bịch 100g Cà phê rang xay</p>
               </div>
             </div>
           </div>
-          <div className="w-[645px] h-[520px] border-2 border-[#ff8d45] rounded-[40px] mx-0 my-10">
+          <div className="w-lg h-[520px] max-lg:max-8/10 overflow-hidden border-2 border-[#ff8d45] rounded-[40px] mx-0 my-10">
             <div className="mx-0 my-8">
-              <img
-                className="float-left w-[111px] mx-[18px] my-0"
-                src="img/seller-box (1).png"
+              <Image
+                src={Seller_box_1.src}
                 alt=""
+                className="float-left mx-[18px] my-0"
+                height={100}
+                width={100}
               />
               <div className="seller_box_header-info">
                 <p className="text-[22px] font-medium text-[#191e38]">
@@ -122,43 +153,51 @@ export default function Seller() {
                 </span>
               </div>
             </div>
-            <p className="w-[90%] text-[#999999] font-normal text-[16px] mb-7 ml-5">
+            <p className="w-[90%] text-[#999999] font-normal text-sm mb-7 ml-5">
               Highlands Coffee là nhà cung cấp cà phê nổi tiếng của Việt Nam, sử
               dụng hạt cà phê từ các vùng núi cao nguyên như Buôn Mê Thuột.
             </p>
             <div className="flex justify-around">
-              <div className="h-[234px] w-[182px] mx-3 my-0 bg-[#f4f5f7] ">
-                <img
-                  className="mx-[7px] my-0.5 font-medium text-[#3a3a3a]"
-                  src="img/seller-box-img (7).png"
+              <div className="h-[234px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
+                <Image
+                  src={Seller_box_img_7}
                   alt=""
+                  height={166}
+                  width={153}
+                  className="my-0.5 font-medium text-[#3a3a3a]"
                 />
                 <p>Bịch 100g Cà phê rang xay</p>
               </div>
-              <div className="h-[234px] w-[182px] mx-3 my-0 bg-[#f4f5f7] ">
-                <img
-                  className="mx-[7px] my-0.5 font-medium text-[#3a3a3a]"
-                  src="img/seller-box-img (6).png"
+              <div className="h-[234px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
+                <Image
+                  src={Seller_box_img_3}
                   alt=""
+                  height={166}
+                  width={153}
+                  className="my-0.5 font-medium text-[#3a3a3a]"
                 />
                 <p>Bịch 100g Cà phê rang xay</p>
               </div>
-              <div className="h-[234px] w-[182px] mx-3 my-0 bg-[#f4f5f7] ">
-                <img
-                  className="mx-[7px] my-0.5 font-medium text-[#3a3a3a]"
-                  src="img/seller-box-img (5).png"
+              <div className="h-[234px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
+                <Image
+                  src={Seller_box_img_5}
                   alt=""
+                  height={166}
+                  width={153}
+                  className="my-0.5 font-medium text-[#3a3a3a]"
                 />
                 <p>Bịch 100g Cà phê rang xay</p>
               </div>
             </div>
           </div>
-          <div className="w-[645px] h-[520px] border-2 border-[#ff8d45] rounded-[40px] mx-0 my-10">
+          <div className="w-lg h-[520px] max-lg:max-8/10 overflow-hidden border-2 border-[#ff8d45] rounded-[40px] mx-0 my-10">
             <div className="mx-0 my-8">
-              <img
-                className="float-left w-[111px] mx-[18px] my-0"
-                src="img/seller-box (2).png"
+              <Image
+                src={Seller_box_2.src}
                 alt=""
+                className="float-left mx-[18px] my-0"
+                height={100}
+                width={100}
               />
               <div className="seller_box_header-info">
                 <p className="text-[22px] font-medium text-[#191e38]">
@@ -170,32 +209,38 @@ export default function Seller() {
                 </span>
               </div>
             </div>
-            <p className="w-[90%] text-[#999999] font-normal text-[16px] mb-7 ml-5">
+            <p className="w-[90%] text-[#999999] font-normal text-sm mb-7 ml-5">
               Highlands Coffee là nhà cung cấp cà phê nổi tiếng của Việt Nam, sử
               dụng hạt cà phê từ các vùng núi cao nguyên như Buôn Mê Thuột.
             </p>
             <div className="flex justify-around">
-              <div className="h-[234px] w-[182px] mx-3 my-0 bg-[#f4f5f7] ">
-                <img
-                  className="mx-[7px] my-0.5 font-medium text-[#3a3a3a]"
-                  src="img/seller-box-img (7).png"
+              <div className="h-[234px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
+                <Image
+                  src={Seller_box_img_7}
                   alt=""
+                  height={166}
+                  width={153}
+                  className="my-0.5 font-medium text-[#3a3a3a]"
                 />
                 <p>Bịch 100g Cà phê rang xay</p>
               </div>
-              <div className="h-[234px] w-[182px] mx-3 my-0 bg-[#f4f5f7] ">
-                <img
-                  className="mx-[7px] my-0.5 font-medium text-[#3a3a3a]"
-                  src="img/seller-box-img (6).png"
+              <div className="h-[234px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
+                <Image
+                  src={Seller_box_img_2}
                   alt=""
+                  height={166}
+                  width={153}
+                  className="my-0.5 font-medium text-[#3a3a3a]"
                 />
                 <p>Bịch 100g Cà phê rang xay</p>
               </div>
-              <div className="h-[234px] w-[182px] mx-3 my-0 bg-[#f4f5f7] ">
-                <img
-                  className="mx-[7px] my-0.5 font-medium text-[#3a3a3a]"
-                  src="img/seller-box-img (5).png"
+              <div className="h-[234px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
+                <Image
+                  src={Seller_box_img_1}
                   alt=""
+                  height={166}
+                  width={153}
+                  className="my-0.5 font-medium text-[#3a3a3a]"
                 />
                 <p>Bịch 100g Cà phê rang xay</p>
               </div>
