@@ -22,6 +22,13 @@ export default function Newss() {
         </div>
         <div className="m-auto w-8/10 flex flex-wrap justify-between">
           <div className="w-lg rounded-[10px] mx-auto my-3 border border-[#8080808c]">
+            <Image
+              src={Newss_box_4.src}
+              className="sm:hidden w-full h-30 object-cover rounded-2xl"
+              alt=""
+              height={136}
+              width={136}
+            />
             <h2 className="font-bold text-2xl px-6 py-[15px]">
               Tổng hợp thị trường cà phê tuần từ 07 đến 11/10/2024 và cuối năm
               2024
@@ -48,6 +55,13 @@ export default function Newss() {
             </div>
           </div>
           <div className="w-lg rounded-[10px] mx-auto my-3 border border-[#8080808c]">
+            <Image
+              src={Newss_box_3.src}
+              className="sm:hidden w-full h-30 object-cover rounded-2xl"
+              alt=""
+              height={136}
+              width={136}
+            />
             <h2 className="font-bold text-2xl px-6 py-[15px]">
               Tổng hợp thị trường cà phê tuần từ 07 đến 11/10/2024 và cuối năm
               2024
@@ -74,6 +88,13 @@ export default function Newss() {
             </div>
           </div>
           <div className="w-lg rounded-[10px] mx-auto my-3 border border-[#8080808c]">
+            <Image
+              src={Newss_box_2.src}
+              className="sm:hidden w-full h-30 object-cover rounded-2xl"
+              alt=""
+              height={136}
+              width={136}
+            />
             <h2 className="font-bold text-2xl px-6 py-[15px]">
               Tổng hợp thị trường cà phê tuần từ 07 đến 11/10/2024 và cuối năm
               2024
@@ -100,6 +121,13 @@ export default function Newss() {
             </div>
           </div>
           <div className="w-lg rounded-[10px] mx-auto my-3 border border-[#8080808c]">
+            <Image
+              src={Newss_box_1.src}
+              className="sm:hidden w-full h-30 object-cover rounded-2xl"
+              alt=""
+              height={136}
+              width={136}
+            />
             <h2 className="font-bold text-2xl px-6 py-[15px]">
               Tổng hợp thị trường cà phê tuần từ 07 đến 11/10/2024 và cuối năm
               2024

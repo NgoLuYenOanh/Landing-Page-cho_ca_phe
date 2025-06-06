@@ -8,6 +8,7 @@ import Product_4 from "../../../public/img/san_pham_noi_bat-box (4).png";
 import Product_5 from "../../../public/img/san_pham_noi_bat-box (5).png";
 import Product_6 from "../../../public/img/san_pham_noi_bat-box (6).png";
 import Product_7 from "../../../public/img/san_pham_noi_bat-box (7).png";
+import Pro from "../../../public/img/san_pham_noi_bat-box (8).png";
 import Product_8 from "../../../public/img/san_pham_noi_bat-box (8).png";
 import Product_list from "./components/Product_list";
 
@@ -29,6 +30,7 @@ export default function Product() {
       store: "Trung Nguyên",
       price_sell: 250000,
       price: 3500000,
+      img: Pro,
     },
     {
       id: 3,
@@ -56,7 +58,7 @@ export default function Product() {
           <FontAwesomeIcon icon={faStar} />
         </div>
         <div className="w-[93.4%] grid lg:grid-cols-4 grid-cols-2 gap-5 m-auto mb-3  ">
-          {/* {Product.map((item) => ())} */}
+          <Product_list product={Product} />
           {/* <div className="mx-auto my-5 relative bg-[#f4f5f7]">
             <Image src={Product_8.src} alt="" width={250} height={301} />
             <p className="absolute px-1.5 py-[15px] text-[#fff] bg-[#e97171] rounded-[50%] top-[2%] right-[2%]">

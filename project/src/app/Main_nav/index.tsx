@@ -9,14 +9,11 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import {
-  faBars,
-  faBell,
-  faCartShopping,
-  faMagnifyingGlass,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBars, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Search from "./Search";
+import Cart_shopping from "./Cart_shopping";
+import Notification from "./Notification";
 
 export default function Main_nav() {
   return (
@@ -61,8 +58,8 @@ export default function Main_nav() {
             icon={faMagnifyingGlass}
             className="sm:hidden! cursor-pointer"
           />
-          <FontAwesomeIcon icon={faCartShopping} className="cursor-pointer" />
-          <FontAwesomeIcon icon={faBell} className="cursor-pointer" />
+          <Notification />
+          <Cart_shopping />
           <Sheet>
             <SheetTrigger className="lg:hidden">
               <FontAwesomeIcon icon={faBars} />

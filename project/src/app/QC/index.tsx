@@ -13,10 +13,10 @@ export default function QC() {
           width={1329}
           height={100}
         />
-        <div className="absolute top-[50%] right-45 translate-y-[-50%]">
+        <div className="absolute block top-[50%] right-[13%] translate-y-[-50%]">
           <a
             href=""
-            className="rounded-[100%] border-none p-5 bg-[#fff] max-lg:p-2"
+            className="rounded-[100%] border-none p-6 bg-[#fff] max-lg:p-1"
           >
             <FontAwesomeIcon icon={faArrowRight} />
           </a>

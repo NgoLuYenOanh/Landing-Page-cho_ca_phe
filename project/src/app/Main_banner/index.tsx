@@ -75,66 +75,68 @@ export default function Main_banner() {
   return (
     <>
       <div className="max-lg:flex-col max-w-8/10 m-auto flex justify-between text-center gap-5 mb-[30px]">
-        <Carousel
-          className="bg-[#FFFFFF] rounded-[20px] h-full flex items-center"
-          opts={{ loop: true }}
-          setApi={setApi}
-          plugins={[
-            Autoplay({
-              delay: 2000,
-            }),
-          ]}
-        >
-          <CarouselContent>
-            <CarouselItem>
-              <Image
-                src={Banner.src}
-                alt=""
-                className="m-auto h-[95%] w-9/10 mt-[1%]"
-                width={939}
-                height={472}
-              />
-            </CarouselItem>
-            <CarouselItem>
-              <Image
-                src={Banner.src}
-                alt=""
-                className="m-auto h-[95%] w-9/10 mt-[1%]"
-                width={939}
-                height={472}
-              />
-            </CarouselItem>
-            <CarouselItem>
-              <Image
-                src={Banner.src}
-                alt=""
-                className="m-auto h-[95%] w-9/10 mt-[1%]"
-                width={939}
-                height={472}
-              />
-            </CarouselItem>
-            <CarouselItem>
-              <Image
-                src={Banner.src}
-                alt=""
-                className="m-auto h-[95%] w-9/10 mt-[1%]"
-                width={939}
-                height={472}
-              />
-            </CarouselItem>
-            <CarouselItem>
-              <Image
-                src={Banner.src}
-                alt=""
-                className="m-auto h-[95%] w-9/10 mt-[1%]"
-                width={939}
-                height={472}
-              />
-            </CarouselItem>
-          </CarouselContent>
-          <CarouselPrevious className="absolute w-10 h-10 left-0 border-none bg-[#1C1C1C66]/40" />
-          <CarouselNext className="absolute right-0 w-10 h-10 border-none bg-[#1C1C1C66]/40" />
-        </Carousel>
+        <div className="bg-[#fff] h-auto rounded-[20px]">
+          <Carousel
+            className="bg-[#FFFFFF] rounded-[20px] h-full flex items-center"
+            opts={{ loop: true }}
+            setApi={setApi}
+            plugins={[
+              Autoplay({
+                delay: 2000,
+              }),
+            ]}
+          >
+            <CarouselContent>
+              <CarouselItem>
+                <Image
+                  src={Banner.src}
+                  alt=""
+                  className="m-auto h-[95%] w-9/10 mt-[1%]"
+                  width={939}
+                  height={472}
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <Image
+                  src={Banner.src}
+                  alt=""
+                  className="m-auto h-[95%] w-9/10 mt-[1%]"
+                  width={939}
+                  height={472}
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <Image
+                  src={Banner.src}
+                  alt=""
+                  className="m-auto h-[95%] w-9/10 mt-[1%]"
+                  width={939}
+                  height={472}
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <Image
+                  src={Banner.src}
+                  alt=""
+                  className="m-auto h-[95%] w-9/10 mt-[1%]"
+                  width={939}
+                  height={472}
+                />
+              </CarouselItem>
+              <CarouselItem>
+                <Image
+                  src={Banner.src}
+                  alt=""
+                  className="m-auto h-[95%] w-9/10 mt-[1%]"
+                  width={939}
+                  height={472}
+                />
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious className="absolute w-10 h-10 left-0 border-none bg-[#1C1C1C66]/40" />
+            <CarouselNext className="absolute right-0 w-10 h-10 border-none bg-[#1C1C1C66]/40" />
+          </Carousel>
+        </div>
         <div className="bg-[#fff] h-auto rounded-[20px]">
           <p className="mx-10 my-5 text-2xl font-medium text-[#4d4d4d]">
             Bảng giá cà phê hôm nay

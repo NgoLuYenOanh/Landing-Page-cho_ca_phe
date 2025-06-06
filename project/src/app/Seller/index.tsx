@@ -46,7 +46,7 @@ export default function Seller() {
               dụng hạt cà phê từ các vùng núi cao nguyên như Buôn Mê Thuột.
             </p>
             <div className="flex justify-around">
-              <div className="h-[234px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
+              <div className="h-[200px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
                 <Image
                   src={Seller_box_img_7}
                   alt=""
@@ -56,7 +56,7 @@ export default function Seller() {
                 />
                 <p>Bịch 100g Cà phê rang xay</p>
               </div>
-              <div className="h-[234px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
+              <div className="h-[200px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
                 <Image
                   src={Seller_box_img_6}
                   alt=""
@@ -66,7 +66,7 @@ export default function Seller() {
                 />
                 <p>Bịch 100g Cà phê rang xay</p>
               </div>
-              <div className="h-[234px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
+              <div className="h-[200px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
                 <Image
                   src={Seller_box_img_5}
                   alt=""
@@ -102,7 +102,7 @@ export default function Seller() {
               dụng hạt cà phê từ các vùng núi cao nguyên như Buôn Mê Thuột.
             </p>
             <div className="flex justify-around">
-              <div className="h-[234px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
+              <div className="h-[200px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
                 <Image
                   src={Seller_box_img_4}
                   alt=""
@@ -112,7 +112,7 @@ export default function Seller() {
                 />
                 <p>Bịch 100g Cà phê rang xay</p>
               </div>
-              <div className="h-[234px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
+              <div className="h-[200px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
                 <Image
                   src={Seller_box_img_6}
                   alt=""
@@ -122,7 +122,7 @@ export default function Seller() {
                 />
                 <p>Bịch 100g Cà phê rang xay</p>
               </div>
-              <div className="h-[234px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
+              <div className="h-[200px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
                 <Image
                   src={Seller_box_img_5}
                   alt=""
@@ -158,7 +158,7 @@ export default function Seller() {
               dụng hạt cà phê từ các vùng núi cao nguyên như Buôn Mê Thuột.
             </p>
             <div className="flex justify-around">
-              <div className="h-[234px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
+              <div className="h-[200px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
                 <Image
                   src={Seller_box_img_7}
                   alt=""
@@ -168,7 +168,7 @@ export default function Seller() {
                 />
                 <p>Bịch 100g Cà phê rang xay</p>
               </div>
-              <div className="h-[234px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
+              <div className="h-[200px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
                 <Image
                   src={Seller_box_img_3}
                   alt=""
@@ -178,7 +178,7 @@ export default function Seller() {
                 />
                 <p>Bịch 100g Cà phê rang xay</p>
               </div>
-              <div className="h-[234px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
+              <div className="h-[200px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
                 <Image
                   src={Seller_box_img_5}
                   alt=""
@@ -214,7 +214,7 @@ export default function Seller() {
               dụng hạt cà phê từ các vùng núi cao nguyên như Buôn Mê Thuột.
             </p>
             <div className="flex justify-around">
-              <div className="h-[234px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
+              <div className="h-[200px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
                 <Image
                   src={Seller_box_img_7}
                   alt=""
@@ -224,7 +224,7 @@ export default function Seller() {
                 />
                 <p>Bịch 100g Cà phê rang xay</p>
               </div>
-              <div className="h-[234px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
+              <div className="h-[200px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
                 <Image
                   src={Seller_box_img_2}
                   alt=""
@@ -234,7 +234,7 @@ export default function Seller() {
                 />
                 <p>Bịch 100g Cà phê rang xay</p>
               </div>
-              <div className="h-[234px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
+              <div className="h-[200px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
                 <Image
                   src={Seller_box_img_1}
                   alt=""
