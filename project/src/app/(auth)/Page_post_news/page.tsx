@@ -9,8 +9,9 @@ export default function page_post_news() {
   return (
     <>
       <Header />
-      <main className="bg-bg grid grid-cols-2">
+      <main className=" bg-bg flex flex-wrap justify-around px-16 py-10">
         <Post_news_left />
+        <hr />
         <Post_new_right />
       </main>
       <Present />

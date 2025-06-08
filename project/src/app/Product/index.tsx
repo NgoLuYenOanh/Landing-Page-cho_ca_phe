@@ -8,8 +8,8 @@ import Product_4 from "../../../public/img/san_pham_noi_bat-box (4).png";
 import Product_5 from "../../../public/img/san_pham_noi_bat-box (5).png";
 import Product_6 from "../../../public/img/san_pham_noi_bat-box (6).png";
 import Product_7 from "../../../public/img/san_pham_noi_bat-box (7).png";
-import Pro from "../../../public/img/san_pham_noi_bat-box (8).png";
 import Product_8 from "../../../public/img/san_pham_noi_bat-box (8).png";
+
 import Product_list from "./components/Product_list";
 
 export default function Product() {
@@ -17,7 +17,7 @@ export default function Product() {
     {
       id: 1,
       sell: -30,
-      img: "https://example.com/images/cafe1.jpg",
+      img: Product_8,
       product_name: "Cà phê rang xay",
       store: "Trung Nguyên",
       price_sell: 250000,
@@ -25,17 +25,16 @@ export default function Product() {
     },
     {
       id: 2,
-      img: "https://example.com/images/cafe2.jpg",
+      img: Product_7,
       product_name: "Cà phê rang xay",
       store: "Trung Nguyên",
       price_sell: 250000,
       price: 3500000,
-      img: Pro,
     },
     {
       id: 3,
       sell: -50,
-      img: "https://example.com/images/cafe3.jpg",
+      img: Product_6,
       product_name: "Cà phê rang xay",
       store: "Trung Nguyên",
       price_sell: 250000,
@@ -43,7 +42,7 @@ export default function Product() {
     },
     {
       id: 4,
-      img: "https://example.com/images/cafe4.jpg",
+      img: Product_5,
       product_name: "Cà phê rang xay",
       store: "Trung Nguyên",
       price_sell: 250000,
