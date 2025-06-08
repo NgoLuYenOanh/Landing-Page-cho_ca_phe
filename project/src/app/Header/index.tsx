@@ -52,7 +52,7 @@ export default function Header() {
             <li className="inline-block px-5">
               <a
                 className="leading-6 text-base no-underline font-normal text-[#18191F] hover:text-main"
-                href="#"
+                href="Page_product"
               >
                 Sản phẩm nổi bật
               </a>

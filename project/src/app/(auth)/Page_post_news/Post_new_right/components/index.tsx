@@ -14,7 +14,9 @@ export default function Post_right({ post }: Post_right_list_props) {
       {post.map((item) => (
         <div className="flex gap-3" key={item.id}>
           <Image src={item.img} className="" alt="" width={115} height={115} />
-          <p className="text-main text-sm font-bold">{item.title}</p>
+          <a href="" className="text-main text-sm font-bold">
+            {item.title}
+          </a>
         </div>
       ))}
     </>

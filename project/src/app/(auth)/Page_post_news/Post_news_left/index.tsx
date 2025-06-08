@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Post_news_1 from "../../../../../public/img/post_news (1).png";
 import Post_news_2 from "../../../../../public/img/post_news (2).png";
 import Post_news_3 from "../../../../../public/img/post_news (3).png";
@@ -51,7 +50,7 @@ export default function Post_news_left() {
   ];
   return (
     <>
-      <Post_left className=" flex flex-col gap-6 rounded-3xl" post={Post} />
+      <Post_left post={Post} />
     </>
   );
 }

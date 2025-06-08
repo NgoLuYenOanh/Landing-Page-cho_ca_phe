@@ -12,9 +12,12 @@ interface Post_left_list_props {
 export default function Post_left({ post }: Post_left_list_props) {
   return (
     <>
-      {post.map((item) => (
-        <div key={item.id} className="max-lg:w-8/10 w-6/10">
-          <a href="" className=" flex flex-row bg-[#fff] gap-4 rounded-3xl">
+      <div className="max-lg:w-8/10 w-7/10 float-left flex flex-col gap-6 mb-5">
+        {post.map((item) => (
+          <div
+            key={item.id}
+            className="flex flex-row max-sm:flex-col gap-4 bg-[#fff] rounded-3xl"
+          >
             <Image
               src={item.img}
               className="rounded-3xl"
@@ -23,12 +26,14 @@ export default function Post_left({ post }: Post_left_list_props) {
               height={208}
             />
             <div className="">
-              <h2 className="text-2xl hover:text-main">{item.title}</h2>
+              <a href="" className="text-2xl hover:text-main">
+                {item.title}
+              </a>
               <p className="text-[#999999] ">{item.paragraph}</p>
             </div>
-          </a>
-        </div>
-      ))}
+          </div>
+        ))}
+      </div>
     </>
   );
 }

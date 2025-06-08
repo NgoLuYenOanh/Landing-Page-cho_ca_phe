@@ -1,6 +1,5 @@
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from "next/image";
 import Product_1 from "../../../public/img/san_pham_noi_bat-box (1).png";
 import Product_2 from "../../../public/img/san_pham_noi_bat-box (2).png";
 import Product_3 from "../../../public/img/san_pham_noi_bat-box (3).png";
@@ -16,7 +15,7 @@ export default function Product() {
   const Product = [
     {
       id: 1,
-      sell: -30,
+      sell: "-30%",
       img: Product_8,
       product_name: "Cà phê rang xay",
       store: "Trung Nguyên",
@@ -28,25 +27,56 @@ export default function Product() {
       img: Product_7,
       product_name: "Cà phê rang xay",
       store: "Trung Nguyên",
-      price_sell: 250000,
-      price: 3500000,
+      price_sell: 2500000,
     },
     {
       id: 3,
-      sell: -50,
-      img: Product_6,
+      sell: "-50%",
+      img: Product_2,
       product_name: "Cà phê rang xay",
       store: "Trung Nguyên",
-      price_sell: 250000,
-      price: 3500000,
+      price_sell: 7000,
+      price: 14000,
     },
     {
       id: 4,
+      img: Product_6,
+      update: "New",
+      product_name: "Cà phê rang xay",
+      store: "Trung Nguyên",
+      price_sell: 500000,
+    },
+    {
+      id: 5,
+      img: Product_1,
+      product_name: "Cà phê rang xay",
+      store: "Trung Nguyên",
+      price_sell: 1500000,
+    },
+    {
+      id: 6,
+      update: "New",
       img: Product_5,
       product_name: "Cà phê rang xay",
       store: "Trung Nguyên",
-      price_sell: 250000,
-      price: 3500000,
+      price_sell: 150000,
+    },
+    {
+      id: 7,
+      sell: "-50%",
+      img: Product_4,
+      product_name: "Cà phê rang xay",
+      store: "Trung Nguyên",
+      price_sell: 70000,
+      price: 140000,
+    },
+    {
+      id: 8,
+      img: Product_3,
+      update: "New",
+      product_name: "Cà phê rang xay",
+      store: "Trung Nguyên",
+      price_sell: 500000,
     },
   ];
   return (
@@ -58,122 +88,8 @@ export default function Product() {
         </div>
         <div className="w-[93.4%] grid lg:grid-cols-4 grid-cols-2 gap-5 m-auto mb-3  ">
           <Product_list product={Product} />
-          {/* <div className="mx-auto my-5 relative bg-[#f4f5f7]">
-            <Image src={Product_8.src} alt="" width={250} height={301} />
-            <p className="absolute px-1.5 py-[15px] text-[#fff] bg-[#e97171] rounded-[50%] top-[2%] right-[2%]">
-              -30%
-            </p>
-            <div className="m-[5%]">
-              <h4 className="text-xl font-semibold">Cà phê rang xay</h4>
-              <p className="text-sm text-[#898989] font-medium">Trung Nguyên</p>
-              <div className="max-w-[95%] flex justify-between">
-                <p className="text-lg font-semibold">vnđ 250.000</p>
-                <del className="block text-[#b0b0b0] font-normal text-sm">
-                  vnđ 3.500.000
-                </del>
-              </div>
-            </div>
-          </div>
-          <div className="mx-auto my-5 relative bg-[#f4f5f7]">
-            <Image src={Product_7.src} alt="" width={250} height={301} />
-            <div className="m-[5%]">
-              <h4 className="text-xl font-semibold">Cà phê rang xay</h4>
-              <p className="text-sm text-[#898989] font-medium">Trung Nguyên</p>
-              <div className="max-w-[95%] flex justify-between">
-                <p className="text-lg font-semibold">vnđ 250.000</p>
-                <del className="block text-[#b0b0b0] font-normal text-sm">
-                  vnđ 3.500.000
-                </del>
-              </div>
-            </div>
-          </div>
-          <div className="mx-auto my-5 relative bg-[#f4f5f7]">
-            <Image src={Product_2.src} alt="" width={250} height={301} />
-            <p className="absolute px-1.5 py-[15px] text-[#fff] bg-[#e97171] rounded-[50%] top-[2%] right-[2%]">
-              -50%
-            </p>
-            <div className="m-[5%]">
-              <h4 className="text-xl font-semibold">Cà phê rang xay</h4>
-              <p className="text-sm text-[#898989] font-medium">Trung Nguyên</p>
-              <div className="max-w-[95%] flex justify-between">
-                <p className="text-lg font-semibold">vnđ 250.000</p>
-                <p className="product_box-info-price-old">
-                  <del className="block text-[#b0b0b0] font-normal text-sm">
-                    vnđ 3.500.000
-                  </del>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="mx-auto my-5 relative bg-[#f4f5f7]">
-            <Image src={Product_6.src} alt="" width={250} height={301} />
-            <p className="absolute px-2.5 py-[15px] text-[#fff] bg-[#2ec1ac] rounded-[50%] top-[2%] right-[2%]">
-              New
-            </p>
-            <div className="m-[5%]">
-              <h4 className="text-xl font-semibold">Cà phê rang xay</h4>
-              <p className="text-sm text-[#898989] font-medium">Trung Nguyên</p>
-              <div className="max-w-[95%] flex justify-between">
-                <p className="text-lg font-semibold">vnđ 250.000</p>
-                <p className="product_box-info-price-old">
-                  <del className="block text-[#b0b0b0] font-normal text-sm">
-                    vnđ 3.500.000
-                  </del>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="mx-auto my-5 relative bg-[#f4f5f7]">
-            <Image src={Product_1.src} alt="" width={250} height={301} />
-            <div className="m-[5%]">
-              <h4 className="text-xl font-semibold">Cà phê rang xay</h4>
-              <p className="text-sm text-[#898989] font-medium">Trung Nguyên</p>
-              <div className="max-w-[95%] flex justify-between">
-                <p className="text-lg font-semibold">vnđ 250.000</p>
-                <p className="product_box-info-price-old">
-                  <del className="block text-[#b0b0b0] font-normal text-sm">
-                    vnđ 3.500.000
-                  </del>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="mx-auto my-5 relative bg-[#f4f5f7]">
-            <Image src={Product_5.src} alt="" width={250} height={301} />
-            <p className="absolute px-2.5 py-[15px] text-[#fff] bg-[#2ec1ac] rounded-[50%] top-[2%] right-[2%]">
-              New
-            </p>
-            <div className="m-[5%]">
-              <h4 className="text-xl font-semibold">Cà phê rang xay</h4>
-              <p className="text-sm text-[#898989] font-medium">Trung Nguyên</p>
-              <div className="max-w-[95%] flex justify-between">
-                <p className="text-lg font-semibold">vnđ 250.000</p>
-                <p className="product_box-info-price-old">
-                  <del className="block text-[#b0b0b0] font-normal text-sm">
-                    vnđ 3.500.000
-                  </del>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="mx-auto my-5 relative bg-[#f4f5f7]">
-            <Image src={Product_4.src} alt="" width={250} height={301} />
-            <p className="absolute px-1.5 py-[15px] text-[#fff] bg-[#e97171] rounded-[50%] top-[2%] right-[2%]">
-              -50%
-            </p>
-            <div className="m-[5%]">
-              <h4 className="text-xl font-semibold">Cà phê rang xay</h4>
-              <p className="text-sm text-[#898989] font-medium">Trung Nguyên</p>
-              <div className="max-w-[95%] flex justify-between">
-                <p className="text-lg font-semibold">vnđ 250.000</p>
-                <p className="product_box-info-price-old">
-                  <del className="block text-[#b0b0b0] font-normal text-sm">
-                    vnđ 3.500.000
-                  </del>
-                </p>
-              </div>
-            </div>
-          </div>
+          {/*
+          
           <div className="mx-auto my-5 relative bg-[#f4f5f7]">
             <Image src={Product_3.src} alt="" width={250} height={301} />
             <p className="absolute px-2.5 py-[15px] text-[#fff] bg-[#2ec1ac] rounded-[50%] top-[2%] right-[2%]">
