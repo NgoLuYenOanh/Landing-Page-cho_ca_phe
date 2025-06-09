@@ -49,7 +49,6 @@ export default function Pagination_sub() {
           </PaginationItem>
         </PaginationContent>
       </Pagination>
-      ;
     </>
   );
 }
