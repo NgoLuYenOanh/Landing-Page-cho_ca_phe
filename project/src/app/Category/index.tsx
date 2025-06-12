@@ -1,6 +1,5 @@
 "use client";
 import Autoplay from "embla-carousel-autoplay";
-import Image from "next/image";
 import Category_1 from "../../../public/img/Box_danhmuc (1).png";
 import Category_2 from "../../../public/img/Box_danhmuc (2).png";
 import Category_3 from "../../../public/img/Box_danhmuc (3).png";
@@ -10,11 +9,11 @@ import {
   Carousel,
   CarouselApi,
   CarouselContent,
-  CarouselItem,
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { useEffect, useState } from "react";
+import Category_list from "./components/Category_list";
 
 export default function Category() {
   const [api, setApi] = useState<CarouselApi>();
@@ -31,6 +30,43 @@ export default function Category() {
       setCurrent(api.selectedScrollSnap() + 1);
     });
   });
+  const Category = [
+    {
+      id: 1,
+      img: Category_3,
+      paragraph: "Cà phê bột",
+    },
+    {
+      id: 2,
+      img: Category_4,
+      paragraph: "Cà phê rang xay",
+    },
+    {
+      id: 3,
+      img: Category_2,
+      paragraph: "Cà phê rang xay",
+    },
+    {
+      id: 4,
+      img: Category_5,
+      paragraph: "Cà phê rang xay",
+    },
+    {
+      id: 5,
+      img: Category_1,
+      paragraph: "Cà phê sữa",
+    },
+    {
+      id: 6,
+      img: Category_2,
+      paragraph: "Máy cà phê",
+    },
+    {
+      id: 7,
+      img: Category_1,
+      paragraph: "Cà phê rang củi",
+    },
+  ];
   return (
     <>
       <div className="h-auto flex justify-center items-center py-[28px]">
@@ -50,180 +86,7 @@ export default function Category() {
               plugins={[Autoplay({ delay: 2000 })]}
             >
               <CarouselContent>
-                <CarouselItem className="basis-1/7 max-sm:basis-1/3">
-                  <a href="#" className="flex flex-col items-center mx-[1%]">
-                    <Image
-                      src={Category_3.src}
-                      alt=""
-                      className="rounded-[30px] w-20 p-[20px] bg-[#f6f6f7]"
-                      width={76}
-                      height={76}
-                    />
-
-                    <p className="text-sm">Cà phê Bột</p>
-                  </a>
-                </CarouselItem>
-                <CarouselItem className="basis-1/7 max-sm:basis-1/3">
-                  <a href="#" className="flex flex-col items-center mx-[1%]">
-                    <Image
-                      src={Category_4.src}
-                      alt=""
-                      className="rounded-[30px] w-20 p-[20px] bg-[#f6f6f7]"
-                      width={76}
-                      height={76}
-                    />
-
-                    <p className="text-sm">Cà phê rang xay</p>
-                  </a>
-                </CarouselItem>
-                <CarouselItem className="basis-1/7 max-sm:basis-1/3">
-                  <a href="#" className="flex flex-col items-center mx-[1%]">
-                    <Image
-                      src={Category_2.src}
-                      alt=""
-                      className="rounded-[30px] w-20 p-[20px] bg-[#f6f6f7]"
-                      width={76}
-                      height={76}
-                    />
-
-                    <p className="text-sm">Cà phê rang xay</p>
-                  </a>
-                </CarouselItem>
-                <CarouselItem className="basis-1/7 max-sm:basis-1/3">
-                  <a href="#" className="flex flex-col items-center mx-[1%]">
-                    <Image
-                      src={Category_5.src}
-                      alt=""
-                      className="rounded-[30px] w-20 p-[20px] bg-[#f6f6f7]"
-                      width={76}
-                      height={76}
-                    />
-
-                    <p className="text-sm">Cà phê rang xay</p>
-                  </a>
-                </CarouselItem>
-                <CarouselItem className="basis-1/7 max-sm:basis-1/3">
-                  <a href="#" className="flex flex-col items-center mx-[1%]">
-                    <Image
-                      src={Category_1.src}
-                      alt=""
-                      className="rounded-[30px] w-20 p-[20px] bg-[#f6f6f7]"
-                      width={76}
-                      height={76}
-                    />
-                    <p className="text-sm">Cà phê sữa</p>
-                  </a>
-                </CarouselItem>
-                <CarouselItem className="basis-1/7 max-sm:basis-1/3">
-                  <a href="#" className="flex flex-col items-center mx-[1%]">
-                    <Image
-                      src={Category_2.src}
-                      alt=""
-                      className="rounded-[30px] w-20 p-[20px] bg-[#f6f6f7]"
-                      width={76}
-                      height={76}
-                    />
-
-                    <p className="text-sm">Máy cà phê</p>
-                  </a>
-                </CarouselItem>
-                <CarouselItem className="basis-1/7 max-sm:basis-1/3">
-                  <a href="#" className="flex flex-col items-center mx-[1%]">
-                    <Image
-                      src={Category_1.src}
-                      alt=""
-                      className="rounded-[30px] w-20 p-[20px] bg-[#f6f6f7]"
-                      width={76}
-                      height={76}
-                    />
-                    <p className="text-sm">Cà phê rang củi</p>
-                  </a>
-                </CarouselItem>
-                <CarouselItem className="basis-1/7 max-sm:basis-1/3">
-                  <a href="#" className="flex flex-col items-center mx-[1%]">
-                    <Image
-                      src={Category_3.src}
-                      alt=""
-                      className="rounded-[30px] w-20 p-[20px] bg-[#f6f6f7]"
-                      width={76}
-                      height={76}
-                    />
-                    <p className="text-sm">Cà phê Bột</p>
-                  </a>
-                </CarouselItem>
-                <CarouselItem className="basis-1/7 max-sm:basis-1/3">
-                  <a href="#" className="flex flex-col items-center mx-[1%]">
-                    <Image
-                      src={Category_4.src}
-                      alt=""
-                      className="rounded-[30px] w-20 p-[20px] bg-[#f6f6f7]"
-                      width={76}
-                      height={76}
-                    />
-                    <p className="text-sm">Cà phê rang xay</p>
-                  </a>
-                </CarouselItem>
-                <CarouselItem className="basis-1/7 max-sm:basis-1/3">
-                  <a href="#" className="flex flex-col items-center mx-[1%]">
-                    <Image
-                      src={Category_2.src}
-                      alt=""
-                      className="rounded-[30px] w-20 p-[20px] bg-[#f6f6f7]"
-                      width={76}
-                      height={76}
-                    />
-                    <p className="text-sm">Cà phê rang xay</p>
-                  </a>
-                </CarouselItem>
-                <CarouselItem className="basis-1/7 max-sm:basis-1/3">
-                  <a href="#" className="flex flex-col items-center mx-[1%]">
-                    <Image
-                      src={Category_5.src}
-                      alt=""
-                      className="rounded-[30px] w-20 p-[20px] bg-[#f6f6f7]"
-                      width={76}
-                      height={76}
-                    />
-                    <p className="text-sm">Cà phê rang xay</p>
-                  </a>
-                </CarouselItem>
-                <CarouselItem className="basis-1/7 max-sm:basis-1/3">
-                  <a href="#" className="flex flex-col items-center mx-[1%]">
-                    <Image
-                      src={Category_1.src}
-                      alt=""
-                      className="rounded-[30px] w-20 p-[20px] bg-[#f6f6f7]"
-                      width={76}
-                      height={76}
-                    />
-                    <p className="text-sm">Cà phê sữa</p>
-                  </a>
-                </CarouselItem>
-                <CarouselItem className="basis-1/7 max-sm:basis-1/3">
-                  <a href="#" className="flex flex-col items-center mx-[1%]">
-                    <Image
-                      src={Category_2.src}
-                      alt=""
-                      className="rounded-[30px] w-20 p-[20px] bg-[#f6f6f7]"
-                      width={76}
-                      height={76}
-                    />
-
-                    <p className="text-sm">Máy cà phê</p>
-                  </a>
-                </CarouselItem>
-                <CarouselItem className="basis-1/7 max-sm:basis-1/3">
-                  <a href="#" className="flex flex-col items-center mx-[1%]">
-                    <Image
-                      src={Category_1.src}
-                      alt=""
-                      className="rounded-[30px] w-20 p-[20px] bg-[#f6f6f7]"
-                      width={76}
-                      height={76}
-                    />
-                    <p className="text-sm">Cà phê rang củi</p>
-                  </a>
-                </CarouselItem>
+                <Category_list post={Category} />
               </CarouselContent>
               <CarouselNext />
               <CarouselPrevious />

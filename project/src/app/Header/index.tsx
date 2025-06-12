@@ -2,6 +2,7 @@ import Image from "next/image";
 import QC from "../../../public/img/QC.png";
 import Form_signup from "./Form_signup";
 import Form_login from "./Form_login";
+import Link from "next/link";
 export default function Header() {
   return (
     <>
@@ -18,44 +19,44 @@ export default function Header() {
         <div>
           <ul className="flex flex-wrap">
             <li className="inline-block px-5">
-              <a
+              <Link
+                href="/"
                 className="leading-6 text-base  no-underline font-normal text-[#18191F] hover:text-main"
-                href=""
               >
                 Chợ cà phê
-              </a>
+              </Link>
             </li>
             <li className="inline-block px-5">
-              <a
+              <Link
                 className="leading-6 text-base no-underline font-normal text-[#18191F] hover:text-main"
                 href="Page_post_news"
               >
                 Tin tức
-              </a>
+              </Link>
             </li>
             <li className="inline-block px-5">
-              <a
+              <Link
                 className="leading-6 text-base no-underline font-normal text-[#18191F] hover:text-main"
                 href="#"
               >
                 Voucher
-              </a>
+              </Link>
             </li>
             <li className="inline-block px-5">
-              <a
+              <Link
                 className="leading-6 text-base no-underline font-normal text-[#18191F] hover:text-main"
                 href="#"
               >
                 Đăng tin
-              </a>
+              </Link>
             </li>
             <li className="inline-block px-5">
-              <a
+              <Link
                 className="leading-6 text-base no-underline font-normal text-[#18191F] hover:text-main"
                 href="Page_product"
               >
                 Sản phẩm nổi bật
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

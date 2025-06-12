@@ -1,8 +1,8 @@
+import RangeSliderDemo from "@/components/slider-14";
 import { Button } from "@/components/ui/button";
 import {
   Command,
   CommandEmpty,
-  CommandGroup,
   CommandInput,
   CommandItem,
   CommandList,
@@ -13,13 +13,20 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { Slider } from "@/components/ui/slider";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Product_filter() {
   return (
     <>
       <div className="max-lg:hidden flex flex-col gap-1.5 w-[25%] bg-white p-5 rounded-2xl float-left">
         <h2 className="text-xl font-bold">Bộ lọc sản phẩm</h2>
-        <Input />
+        <div className="relative">
+          <Input />
+          <FontAwesomeIcon
+            className="absolute top-1/2 translate-y-[-50%] right-2"
+            icon={faMagnifyingGlass}
+          />
+        </div>
         <Popover>
           <PopoverTrigger className="cursor-pointer">Danh mục</PopoverTrigger>
           <PopoverContent>
@@ -36,7 +43,7 @@ export default function Product_filter() {
         <Popover>
           <PopoverTrigger className="cursor-pointer">Khoảng giá</PopoverTrigger>
           <PopoverContent>
-            <Slider defaultValue={[33]} max={100} step={1} />
+            <RangeSliderDemo />
             <br />
             <div className="flex flex-col gap-2.5">
               <Button variant="outline">10k-20k</Button>
@@ -51,18 +58,14 @@ export default function Product_filter() {
         <Popover>
           <PopoverTrigger className="cursor-pointer">Cửa hàng</PopoverTrigger>
           <PopoverContent>
-            <Slider defaultValue={[33]} max={100} step={1} />
-            <br />
             <div className="">
               <Command>
                 <CommandInput placeholder="Tìm cửa hàng..." />
                 <CommandList>
                   <CommandEmpty>No results found.</CommandEmpty>
-                  <CommandGroup heading="Suggestions">
-                    <CommandItem>Cafe DakLak xuat khau</CommandItem>
-                    <CommandItem>Hala Food</CommandItem>
-                    <CommandItem>Deva coffee</CommandItem>
-                  </CommandGroup>
+                  <CommandItem>Cafe DakLak xuat khau</CommandItem>
+                  <CommandItem>Hala Food</CommandItem>
+                  <CommandItem>Deva coffee</CommandItem>
                 </CommandList>
               </Command>
             </div>

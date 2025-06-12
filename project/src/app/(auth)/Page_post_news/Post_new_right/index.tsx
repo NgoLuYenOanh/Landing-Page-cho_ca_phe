@@ -4,7 +4,7 @@ import Post_news_4 from "../../../../../public/img/post_news (4).png";
 import Post_news_9 from "../../../../../public/img/post_news (9).png";
 import Post_news_6 from "../../../../../public/img/post_news (6).png";
 import Post_news_8 from "../../../../../public/img/post_news (8).png";
-import Post_right from "./components";
+import Post_right from "./components/Post_right";
 export default function Post_new_right() {
   const Post = [
     {
@@ -42,10 +42,10 @@ export default function Post_new_right() {
     <>
       <div className="max-lg:hidden float-right grid gap-3 max-lg:none w-[25%]">
         <div className="bg-[#fff] rounded-3xl grid gap-2 px-4 py-3">
-          <h2 className="text-2xl">Bài viết nổi bật</h2>
+          <h2 className="text-2xl text-center">Bài viết nổi bật</h2>
           <Post_right post={Post} />
         </div>
-        <div className="flex flex-col bg-[#fff] rounded-3xl p-4 justify-evenly items-center">
+        <div className="flex flex-col h-fit bg-[#fff] rounded-3xl p-2 justify-evenly items-center">
           <h2 className="text-xl font-bold">Từ khoá tìm kiếm</h2>
           <div className="grid grid-cols-2 gap-2">
             <a href="" className="px-2 py-1 border text-center text-[#999999]">
