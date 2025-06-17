@@ -11,10 +11,11 @@ import Product from "./Product";
 import Present from "./Present";
 import Keyword from "./Keyword";
 import Test_API from "./Test_API";
-
+import { Test } from "./Test_/test";
 export default function Home() {
   return (
     <>
+      <Test />
       <Header />
       <main className="bg-bg relative">
         <div className="bg-[#E9FFFB] pb-5">
