@@ -1,5 +1,3 @@
-import Header from "./Header";
-import Footer from "./Footer";
 import Main_nav from "./Main_nav";
 import Main_banner from "./Main_banner";
 import Main_box from "./Main_box";
@@ -16,7 +14,6 @@ export default function Home() {
   return (
     <>
       <Test />
-      <Header />
       <main className="bg-bg relative">
         <div className="bg-[#E9FFFB] pb-5">
           <Test_API />
@@ -32,7 +29,6 @@ export default function Home() {
         <Present />
         <Keyword />
       </main>
-      <Footer />
     </>
   );
 }

@@ -9,7 +9,6 @@ import Pagination_sub from "../Page_post_news/Pagination";
 export default function page_product() {
   return (
     <>
-      <Header />
       <main className=" bg-bg px-16 py-10">
         <Product_filter />
         <Product />
@@ -17,7 +16,6 @@ export default function page_product() {
       </main>
       <Present />
       <Keyword />
-      <Footer />
     </>
   );
 }
