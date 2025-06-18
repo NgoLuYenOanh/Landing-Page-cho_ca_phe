@@ -1,5 +1,6 @@
 export interface IPolicy {
+  userId: number;
   id: number;
-  name: string;
-  content: string;
+  title: string;
+  body: string;
 }

@@ -1,5 +1,3 @@
-import Footer from "@/app/Footer";
-import Header from "@/app/Header";
 import Keyword from "@/app/Keyword";
 import Present from "@/app/Present";
 import Product from "./Product_list/index";

@@ -9,11 +9,11 @@ import Product from "./Product";
 import Present from "./Present";
 import Keyword from "./Keyword";
 import Test_API from "./Test_API";
-import { Test } from "./Test_/test";
+import UseGetPolices from "@/app/Test_/useGetPolices";
 export default function Home() {
   return (
     <>
-      <Test />
+      <UseGetPolices />
       <main className="bg-bg relative">
         <div className="bg-[#E9FFFB] pb-5">
           <Test_API />
