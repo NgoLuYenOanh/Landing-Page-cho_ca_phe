@@ -29,7 +29,7 @@ export default function Header() {
             <li className="inline-block px-5">
               <Link
                 className="leading-6 text-base no-underline font-normal text-[#18191F] hover:text-main"
-                href="Page_post_news"
+                href="/page/Page_post_news"
               >
                 Tin tức
               </Link>
@@ -37,7 +37,7 @@ export default function Header() {
             <li className="inline-block px-5">
               <Link
                 className="leading-6 text-base no-underline font-normal text-[#18191F] hover:text-main"
-                href="#"
+                href="/page/Page_voucher"
               >
                 Voucher
               </Link>
@@ -45,7 +45,7 @@ export default function Header() {
             <li className="inline-block px-5">
               <Link
                 className="leading-6 text-base no-underline font-normal text-[#18191F] hover:text-main"
-                href="#"
+                href="/page/Page_push_news"
               >
                 Đăng tin
               </Link>
@@ -53,7 +53,7 @@ export default function Header() {
             <li className="inline-block px-5">
               <Link
                 className="leading-6 text-base no-underline font-normal text-[#18191F] hover:text-main"
-                href="Page_product"
+                href="/page/Page_product"
               >
                 Sản phẩm nổi bật
               </Link>

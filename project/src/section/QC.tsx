@@ -1,7 +1,7 @@
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
-import Image_4 from "../../../public/img/image (4).png";
+import Image_4 from "../../public/img/image (4).png";
 export default function QC() {
   return (
     <>

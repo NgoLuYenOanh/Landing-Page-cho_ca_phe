@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Box_Contact_1 from "../../../public/img/Box_Contact (1).png";
-import Box_Contact_2 from "../../../public/img/Box_Contact (2).png";
-import Box_Contact_3 from "../../../public/img/Box_Contact (3).png";
+import Box_Contact_1 from "../../public/img/Box_Contact (1).png";
+import Box_Contact_2 from "../../public/img/Box_Contact (2).png";
+import Box_Contact_3 from "../../public/img/Box_Contact (3).png";
 export default function Main_box() {
   return (
     <>

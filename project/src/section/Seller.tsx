@@ -1,16 +1,16 @@
 import Image from "next/image";
-import Seller_header from "../../../public/img/seller_header.png";
-import Seller_box_1 from "../../../public/img/seller-box (1).png";
-import Seller_box_2 from "../../../public/img/seller-box (2).png";
-import Seller_box_3 from "../../../public/img/seller-box (3).png";
-import Seller_box_4 from "../../../public/img/seller-box (4).png";
-import Seller_box_img_1 from "../../../public/img/seller-box-img (1).png";
-import Seller_box_img_2 from "../../../public/img/seller-box-img (2).png";
-import Seller_box_img_3 from "../../../public/img/seller-box-img (3).png";
-import Seller_box_img_4 from "../../../public/img/seller-box-img (4).png";
-import Seller_box_img_5 from "../../../public/img/seller-box-img (5).png";
-import Seller_box_img_6 from "../../../public/img/seller-box-img (6).png";
-import Seller_box_img_7 from "../../../public/img/seller-box-img (7).png";
+import Seller_header from "../../public/img/seller_header.png";
+import Seller_box_1 from "../../public/img/seller-box (1).png";
+import Seller_box_2 from "../../public/img/seller-box (2).png";
+import Seller_box_3 from "../../public/img/seller-box (3).png";
+import Seller_box_4 from "../../public/img/seller-box (4).png";
+import Seller_box_img_1 from "../../public/img/seller-box-img (1).png";
+import Seller_box_img_2 from "../../public/img/seller-box-img (2).png";
+import Seller_box_img_3 from "../../public/img/seller-box-img (3).png";
+import Seller_box_img_4 from "../../public/img/seller-box-img (4).png";
+import Seller_box_img_5 from "../../public/img/seller-box-img (5).png";
+import Seller_box_img_6 from "../../public/img/seller-box-img (6).png";
+import Seller_box_img_7 from "../../public/img/seller-box-img (7).png";
 export default function Seller() {
   return (
     <>

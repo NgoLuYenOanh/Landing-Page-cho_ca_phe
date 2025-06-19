@@ -3,11 +3,11 @@ import "./globals.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import localFont from "next/font/local";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 config.autoAddCss = false;
 const Font_main = localFont({
-  src: "fonts/FZ Poppins-Medium.ttf",
+  src: "../../public/fonts//FZ Poppins-Medium.ttf",
 });
 
 export const metadata: Metadata = {
@@ -25,10 +25,6 @@ export default function RootLayout({
       <body className={`${Font_main.className}`}>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-          rel="stylesheet"
-        />
         <Header />
         {children}
         <Footer />

@@ -1,10 +1,10 @@
-import Keyword from "@/app/Keyword";
-import Present from "@/app/Present";
+import Keyword from "@/section/Keyword";
+import Present from "@/section/Present";
 import Post_news_left from "./Post_news_left";
 import Post_new_right from "./Post_new_right";
 import Pagination_sub from "./Pagination";
 
-export default function page_post_news() {
+export default function Page_post_news() {
   return (
     <>
       <main className=" bg-bg px-16 py-10">

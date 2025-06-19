@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Logo from "../../../public/img/Group 2230 (1).png";
-import Form_login from "../Header/Form_login";
-import Form_signup from "../Header/Form_signup";
+import Form_login from "../../components/Header/Form_login";
+import Form_signup from "../../components/Header/Form_signup";
 import {
   Sheet,
   SheetContent,

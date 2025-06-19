@@ -2,7 +2,7 @@
 import { type CarouselApi } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
-import Banner from "../../../public/img/Banner.png";
+import Banner from "../../public/img/Banner.png";
 import {
   Carousel,
   CarouselContent,

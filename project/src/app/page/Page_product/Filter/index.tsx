@@ -1,4 +1,4 @@
-import RangeSliderDemo from "@/components/slider-14";
+import RangeSliderDemo from "@/components/ui/slider-14";
 import { Button } from "@/components/ui/button";
 import {
   Command,

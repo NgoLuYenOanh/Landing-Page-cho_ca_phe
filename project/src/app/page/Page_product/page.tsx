@@ -1,10 +1,10 @@
-import Keyword from "@/app/Keyword";
-import Present from "@/app/Present";
+import Keyword from "@/section/Keyword";
+import Present from "@/section/Present";
 import Product from "./Product_list/index";
 import Product_filter from "./Filter";
 import Pagination_sub from "../Page_post_news/Pagination";
 
-export default function page_product() {
+export default function Page_product() {
   return (
     <>
       <main className=" bg-bg px-16 py-10">
