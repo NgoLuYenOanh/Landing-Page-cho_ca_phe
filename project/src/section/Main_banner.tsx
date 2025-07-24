@@ -3,6 +3,10 @@ import { type CarouselApi } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import Banner from "../../public/img/Banner.png";
+import Banner_1 from "../../public/img/Banner_1.png";
+import Banner_2 from "../../public/img/Banner_2.png";
+import Banner_3 from "../../public/img/Banner_3.png";
+import Banner_4 from "../../public/img/Banner_4.png";
 import {
   Carousel,
   CarouselContent,
@@ -98,7 +102,7 @@ export default function Main_banner() {
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  src={Banner.src}
+                  src={Banner_4.src}
                   alt=""
                   className="m-auto h-[95%] w-9/10 mt-[1%]"
                   width={939}
@@ -107,7 +111,7 @@ export default function Main_banner() {
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  src={Banner.src}
+                  src={Banner_1.src}
                   alt=""
                   className="m-auto h-[95%] w-9/10 mt-[1%]"
                   width={939}
@@ -116,7 +120,7 @@ export default function Main_banner() {
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  src={Banner.src}
+                  src={Banner_2.src}
                   alt=""
                   className="m-auto h-[95%] w-9/10 mt-[1%]"
                   width={939}
@@ -125,7 +129,7 @@ export default function Main_banner() {
               </CarouselItem>
               <CarouselItem>
                 <Image
-                  src={Banner.src}
+                  src={Banner_3.src}
                   alt=""
                   className="m-auto h-[95%] w-9/10 mt-[1%]"
                   width={939}
@@ -148,7 +152,7 @@ export default function Main_banner() {
             >
               Xem ngày khác
             </a>
-            <div className="my-auto mx-0 color-main px-[20px] py-[10px] bg-[#fff] border-2 border-solid rounded-[30px]">
+            <button className="my-auto mx-0 color-main cursor-pointer px-[20px] py-[10px] bg-[#fff] border-2 border-solid rounded-[30px]">
               <FontAwesomeIcon
                 className="relative mr-[10px] text-main"
                 icon={faShareNodes}
@@ -159,7 +163,7 @@ export default function Main_banner() {
               >
                 Chia sẻ
               </a>
-            </div>
+            </button>
           </div>
           <Table>
             <TableHeader>

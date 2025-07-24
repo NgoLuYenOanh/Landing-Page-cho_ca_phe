@@ -17,8 +17,8 @@ import Category_list from "./components/Category_list";
 
 export default function Category() {
   const [api, setApi] = useState<CarouselApi>();
-  const [current, setCurrent] = useState(0);
-  const [count, setCount] = useState(0);
+  const [, setCurrent] = useState(0);
+  const [, setCount] = useState(0);
   useEffect(() => {
     if (!api) {
       return;
@@ -29,7 +29,7 @@ export default function Category() {
     api.on("select", () => {
       setCurrent(api.selectedScrollSnap() + 1);
     });
-  });
+  }, [api]);
   const Category = [
     {
       id: 1,
@@ -63,6 +63,41 @@ export default function Category() {
     },
     {
       id: 7,
+      img: Category_1,
+      paragraph: "Cà phê rang củi",
+    },
+    {
+      id: 8,
+      img: Category_3,
+      paragraph: "Cà phê bột",
+    },
+    {
+      id: 9,
+      img: Category_4,
+      paragraph: "Cà phê rang xay",
+    },
+    {
+      id: 10,
+      img: Category_2,
+      paragraph: "Cà phê rang xay",
+    },
+    {
+      id: 11,
+      img: Category_5,
+      paragraph: "Cà phê rang xay",
+    },
+    {
+      id: 12,
+      img: Category_1,
+      paragraph: "Cà phê sữa",
+    },
+    {
+      id: 13,
+      img: Category_2,
+      paragraph: "Máy cà phê",
+    },
+    {
+      id: 14,
       img: Category_1,
       paragraph: "Cà phê rang củi",
     },

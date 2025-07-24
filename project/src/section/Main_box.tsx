@@ -36,7 +36,7 @@ export default function Main_box() {
           <br />
           <a
             className="mt-[100px] text-main text-sm px-6 py-3 border border-solid border-main rounded-[30px] font-bold hover:text-[#fff] hover:bg-main"
-            href="#"
+            href="Page_voucher"
           >
             Xem ngay
           </a>

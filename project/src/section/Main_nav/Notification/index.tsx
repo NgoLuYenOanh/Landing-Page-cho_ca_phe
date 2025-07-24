@@ -3,14 +3,14 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { faBell } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Notification() {
   return (
     <>
       <Popover>
         <PopoverTrigger>
-          <FontAwesomeIcon icon={faCartShopping} className="cursor-pointer" />
+          <FontAwesomeIcon icon={faBell} className="cursor-pointer" />
         </PopoverTrigger>
         <PopoverContent>
           <h2>Thông báo</h2>

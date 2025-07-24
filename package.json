@@ -1,9 +1,13 @@
 {
   "dependencies": {
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "axios": "^1.10.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "filestack-js": "^4.0.2",
     "lucide-react": "^0.513.0",
+    "pinata": "^2.4.8",
+    "server-only": "^0.0.1",
     "tailwind-merge": "^3.3.0",
     "tw-animate-css": "^1.3.4"
   }

@@ -1,68 +1,38 @@
-import Image from "next/image";
-import QC from "../../../public/img/QC.png";
-import Form_signup from "./Form_signup";
-import Form_login from "./Form_login";
+"use client";
 import Link from "next/link";
+import AuthLoginRegister from "./login&register";
+import { usePathname } from "next/navigation";
 export default function Header() {
+  const pathname = usePathname();
+
+  const navItems = [
+    { label: "Chợ cà phê", href: "/" },
+    { label: "Tin tức", href: "/Page_post_news" },
+    { label: "Voucher", href: "/Page_voucher" },
+    { label: "Đăng tin", href: "/Page_news" },
+    { label: "Sản phẩm nổi bật", href: "/Page_product" },
+  ];
+
   return (
     <>
-      <Image
-        src={QC.src}
-        className="h-20"
-        title="QC"
-        alt="QC"
-        width={1540}
-        height={168}
-        priority
-      />
       <div className="max-w-8/10 h-15 flex flex-wrap justify-between items-center m-auto max-lg:hidden">
         <div>
           <ul className="flex flex-wrap">
-            <li className="inline-block px-5">
+            {navItems.map((item) => (
               <Link
-                href="/"
-                className="leading-6 text-base  no-underline font-normal text-[#18191F] hover:text-main"
+                key={item.href}
+                href={item.href}
+                className={`px-4 py-2 hover:text-main transition-colors duration-200 ${
+                  pathname === item.href ? "text-main font-bold" : "text-black"
+                }`}
               >
-                Chợ cà phê
+                {item.label}
               </Link>
-            </li>
-            <li className="inline-block px-5">
-              <Link
-                className="leading-6 text-base no-underline font-normal text-[#18191F] hover:text-main"
-                href="/page/Page_post_news"
-              >
-                Tin tức
-              </Link>
-            </li>
-            <li className="inline-block px-5">
-              <Link
-                className="leading-6 text-base no-underline font-normal text-[#18191F] hover:text-main"
-                href="/page/Page_voucher"
-              >
-                Voucher
-              </Link>
-            </li>
-            <li className="inline-block px-5">
-              <Link
-                className="leading-6 text-base no-underline font-normal text-[#18191F] hover:text-main"
-                href="/page/Page_push_news"
-              >
-                Đăng tin
-              </Link>
-            </li>
-            <li className="inline-block px-5">
-              <Link
-                className="leading-6 text-base no-underline font-normal text-[#18191F] hover:text-main"
-                href="/page/Page_product"
-              >
-                Sản phẩm nổi bật
-              </Link>
-            </li>
+            ))}
           </ul>
         </div>
-        <div>
-          <Form_signup />
-          <Form_login />
+        <div className="flex">
+          <AuthLoginRegister />
         </div>
       </div>
     </>

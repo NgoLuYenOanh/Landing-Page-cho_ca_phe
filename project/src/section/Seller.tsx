@@ -21,7 +21,7 @@ export default function Seller() {
             Nhà bán hàng nổi bật
           </p>
         </div>
-        <div className="flex flex-wrap justify-evenly m-auto max-w-9/10">
+        <div className="flex flex-wrap gap-5 justify-evenly m-auto max-w-9/10">
           <div className="w-lg h-[520px] max-lg:max-8/10 overflow-hidden border-2 border-[#ff8d45] rounded-[40px] mx-0 my-10">
             <div className="mx-0 my-8">
               <Image
@@ -33,7 +33,7 @@ export default function Seller() {
               />
               <div className="">
                 <p className="text-[22px] font-medium text-[#191e38]">
-                  Cà phê Hạnh Trang Nguyên
+                  Hạnh Trang Nguyên - <br /> Chi nhánh Hà Nội
                 </p>
                 <p className="mb-2">123 sản phẩm đang bán</p>
                 <span className="inline-block p-[5px] bg-main text-[#fff] skew-[-2deg]">
@@ -42,8 +42,10 @@ export default function Seller() {
               </div>
             </div>
             <p className="w-[90%] text-[#999999] font-normal text-sm mb-7 ml-5">
-              Highlands Coffee là nhà cung cấp cà phê nổi tiếng của Việt Nam, sử
-              dụng hạt cà phê từ các vùng núi cao nguyên như Buôn Mê Thuột.
+              Cà phê Hạnh Trang Nguyên chuyên cung cấp các dòng cà phê rang xay
+              nguyên chất, được tuyển chọn từ những hạt cà phê chín mọng tại
+              vùng cao nguyên Buôn Ma Thuột. Cam kết hương vị đậm đà, giao hàng
+              nhanh toàn quốc.
             </p>
             <div className="flex justify-around">
               <div className="h-[200px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
@@ -89,7 +91,7 @@ export default function Seller() {
               />
               <div className="seller_box_header-info">
                 <p className="text-[22px] font-medium text-[#191e38]">
-                  Cà phê Hạnh Trang Nguyên
+                  Hạnh Trang Nguyên - <br /> Chi nhánh Hồ Tây
                 </p>
                 <p className="mb-2">123 sản phẩm đang bán</p>
                 <span className="inline-block p-[5px] bg-main text-[#fff] skew-[-2deg]">
@@ -98,8 +100,9 @@ export default function Seller() {
               </div>
             </div>
             <p className="w-[90%] text-[#999999] font-normal text-sm mb-7 ml-5">
-              Highlands Coffee là nhà cung cấp cà phê nổi tiếng của Việt Nam, sử
-              dụng hạt cà phê từ các vùng núi cao nguyên như Buôn Mê Thuột.
+              Tự hào là thương hiệu địa phương, Hạnh Trang Nguyên mang đến cà
+              phê sạch, không phụ gia, rang mộc truyền thống. Phù hợp cho cả pha
+              phin và pha máy.
             </p>
             <div className="flex justify-around">
               <div className="h-[200px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
@@ -145,7 +148,7 @@ export default function Seller() {
               />
               <div className="seller_box_header-info">
                 <p className="text-[22px] font-medium text-[#191e38]">
-                  Cà phê Hạnh Trang Nguyên
+                  Hạnh Trang Nguyên - <br /> Cà phê thủ công
                 </p>
                 <p className="mb-2">123 sản phẩm đang bán</p>
                 <span className="inline-block p-[5px] bg-main text-[#fff] skew-[-2deg]">
@@ -154,8 +157,9 @@ export default function Seller() {
               </div>
             </div>
             <p className="w-[90%] text-[#999999] font-normal text-sm mb-7 ml-5">
-              Highlands Coffee là nhà cung cấp cà phê nổi tiếng của Việt Nam, sử
-              dụng hạt cà phê từ các vùng núi cao nguyên như Buôn Mê Thuột.
+              Với hơn 10 năm kinh nghiệm, Hạnh Trang Nguyên phục vụ hàng ngàn
+              khách sỉ & lẻ trên toàn quốc. Sản phẩm đạt chuẩn chất lượng, phù
+              hợp quán cà phê, văn phòng, và gia đình.
             </p>
             <div className="flex justify-around">
               <div className="h-[200px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
@@ -201,7 +205,7 @@ export default function Seller() {
               />
               <div className="seller_box_header-info">
                 <p className="text-[22px] font-medium text-[#191e38]">
-                  Cà phê Hạnh Trang Nguyên
+                  Hạnh Trang Nguyên - <br /> Chi nhánh Đà Nẵng
                 </p>
                 <p className="mb-2">123 sản phẩm đang bán</p>
                 <span className="inline-block p-[5px] bg-main text-[#fff] skew-[-2deg]">
@@ -210,8 +214,8 @@ export default function Seller() {
               </div>
             </div>
             <p className="w-[90%] text-[#999999] font-normal text-sm mb-7 ml-5">
-              Highlands Coffee là nhà cung cấp cà phê nổi tiếng của Việt Nam, sử
-              dụng hạt cà phê từ các vùng núi cao nguyên như Buôn Mê Thuột.
+              Cà phê đậm vị Tây Nguyên – được rang xay theo công thức riêng, giữ
+              trọn hương thơm và vị đắng đặc trưng. Mua sỉ lẻ đều có giá ưu đãi.
             </p>
             <div className="flex justify-around">
               <div className="h-[200px] w-[162px] mx-3 my-0 bg-[#f4f5f7] ">
@@ -251,12 +255,6 @@ export default function Seller() {
           Hệ thống Chợ Cà Phê kết nối với hàng trăm nhà cung cấp trên toàn quốc
           mang đến cho khách hàng những thước cà phê chất lượng, đậm vị
         </p>
-        <a
-          className="w-[243px] h-[55px] px-0 py-[17px] text-center no-underline text-main border border-main block mx-auto my-0 mt-8 font-semibold text-[16px] hover:text-[#fff] hover:bg-main"
-          href="#"
-        >
-          Xem thêm
-        </a>
       </div>
     </>
   );

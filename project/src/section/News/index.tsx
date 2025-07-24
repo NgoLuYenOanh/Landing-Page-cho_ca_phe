@@ -15,7 +15,7 @@ export default function Newss() {
           </h1>
           <a
             className="float-right text-main text-2xl px-6 py-4 no-underline"
-            href="#"
+            href="Page_post_news"
           >
             Xem Thêm
           </a>

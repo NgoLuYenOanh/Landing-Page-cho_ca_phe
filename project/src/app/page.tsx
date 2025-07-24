@@ -5,11 +5,12 @@ import Category from "@/section/Category";
 import Seller from "@/section/Seller";
 import QC from "@/section/QC";
 import News from "@/section/News";
-import Product from "@/section/Product";
+import Product from "@/section/Product/";
 import Present from "@/section/Present";
-import Keyword from "@/section/Keyword";
+// import Keyword from "@/section/Keyword";
 import Test_API from "@/section/Test_API";
 import UseGetPolices from "@/section/Test_/useGetPolices";
+import Push_news from "@/section/Push_news/Push_news";
 export default function Home() {
   return (
     <>
@@ -26,8 +27,9 @@ export default function Home() {
         <QC />
         <News />
         <Product />
+        <Push_news />
         <Present />
-        <Keyword />
+        {/* <Keyword /> */}
       </main>
     </>
   );

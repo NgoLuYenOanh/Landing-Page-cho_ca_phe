@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1751769175164,
+    "productName": "Cà phê rang xay nguyên chất",
+    "store": "Cà phê Chú Linh",
+    "address": "48 Hồng Thái, Hòa Khánh, TP.Đà Nẵng",
+    "title": "🌿 Cà phê rang xay thủ công – Đậm đà hương vị Việt",
+    "description": "Cà phê được rang xay thủ công từ hạt Arabica và Robusta nguyên chất, không tẩm hương liệu. Vị đậm, hậu ngọt, hương thơm nồng nàn. Phù hợp pha phin, pha máy. Đóng gói 500g.",
+    "images": [
+      "/uploads/1751769173079-post_news (1).png",
+      "/uploads/1751769173266-post_news (2).png",
+      "/uploads/1751769173434-post_news (3).png",
+      "/uploads/1751769173733-post_news (5).png",
+      "/uploads/1751769173923-post_news (6).png"
+    ]
+  },
+  {
+    "id": 1751769327098,
+    "productName": "Cà phê đặc sản Tây Nguyên",
+    "store": "Cà phê Leo",
+    "address": "48 Hồng Thái, Hòa Khánh, TP.Đà Nẵng",
+    "title": "✨ Specialty Coffee – Cà phê đặc sản chuẩn quốc tế",
+    "description": "Hạt cà phê được chọn lọc kỹ càng từ độ cao 1.300m, sơ chế honey, đạt điểm cupping 84 theo chuẩn SCA. Phù hợp với dân sành cà phê hoặc các quán cao cấp. Giao hàng toàn quốc.",
+    "images": [
+      "/uploads/1751769324705-san_pham_noi_bat-box (1).png",
+      "/uploads/1751769324899-san_pham_noi_bat-box (2).png",
+      "/uploads/1751769325084-san_pham_noi_bat-box (3).png",
+      "/uploads/1751769325291-san_pham_noi_bat-box (4).png"
+    ]
+  },
+  {
+    "id": 1751769888730,
+    "productName": "Set quà tặng cà phê cao cấp",
+    "store": "Cà phê An Nhiên",
+    "address": "45 Phạm Văn Đồng, Thủ Đức, TP.HCM",
+    "title": "🎁 Hộp quà cà phê cao cấp – Món quà tinh tế cho người thân",
+    "description": "Combo gồm 2 túi cà phê xay (250g), 1 phin và 1 ly sứ nghệ thuật trong hộp sang trọng. Tặng kèm thiệp viết tay. Quà Tết – sinh nhật – tri ân đều phù hợp.",
+    "images": [
+      "/uploads/1751769887289-test_upload_2.jpg",
+      "/uploads/1751769887469-test_upload_3.jpg"
+    ]
+  },
+  {
+    "id": 1751770292086,
+    "productName": "Mayaca Espresso blend M4",
+    "store": "Mayaca Coffee",
+    "address": "Đà Nẵng",
+    "title": "MAYACA ESPRESSO BLEND M4 – 500G",
+    "description": "Là dòng sản phẩm rang xay pha máy chuyên dụng, M4 mang hương vị chuẩn của cà phê Espresso hiện đại, với tỉ lệ Blend vàng 70% Robusta và 30% Arabica, tạo hương vị cân bằng, thơm, ngọt, chua nhẹ, hương vị Chocolate đậm đà.\n\n﻿MAYACA ESPRESSO BLEND M4 – 500G là sản phẩm cà phê hạt pha máy chuyên dụng đáp ứng những yêu cầu khắt khe nhất của một ly espresso. Khi chiết xuất M4 sẽ tạo lớp Crema vàng óng ả, dày, bền không ngã màu đen, cường độ hương thơm cao, hậu vị dài, thể chất – Medium body sẽ mang đến kết cấu cân bằng, và dễ thưởng thức hàng ngày hơn.",
+    "images": [
+      "/uploads/1751770290096-test_upload_1.jpg",
+      "/uploads/1751770347723-test_upload_5.jpg",
+      "/uploads/1751770352971-test_upload_4.jpg"
+    ]
+  },
+  {
+    "id": 1751770517035,
+    "productName": "Cà phê nguyên hạt Robusta S18",
+    "store": "Leo's Coffee",
+    "address": "180 Vũ Quỳnh, Hoà Khánh, TP.Đà Nẵng",
+    "title": "🌱 Cà phê nguyên hạt – Tự xay, tự thưởng thức",
+    "description": "ạt cà phê rang mộc, không tẩm. Túi 1kg, bảo quản hút chân không. Phù hợp cho máy xay tự động, người thích điều chỉnh độ mịn theo cách pha.",
+    "images": [
+      "/uploads/1751770514634-test_upload_6.jpg",
+      "/uploads/1751770514854-test_upload_7.jpg",
+      "/uploads/1751770515077-test_upload_8.jpg",
+      "/uploads/1751770515289-tin_tuc_box (2).png",
+      "/uploads/1751770515489-tin_tuc_box (3).png",
+      "/uploads/1751770532907-san_pham_noi_bat-box (4).png"
+    ]
+  }
+]

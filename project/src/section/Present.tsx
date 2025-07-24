@@ -11,7 +11,7 @@ export default function Present() {
         <div className="w-8/10 flex m-auto">
           <a
             className="bg-[#4caf4f] font-medium text-xl text-center m-auto px-[35px] py-5 ml text-[#fff] hover:text-[#4caf4f] hover:bg-[#fff]"
-            href="#"
+            href="https://www.youtube.com/watch?v=jEJNlUQp5gw&t=3s"
           >
             Xem video
             <FontAwesomeIcon icon={faArrowRight} className="ml-1.5" />
